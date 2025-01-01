@@ -1,0 +1,9 @@
+.btn {
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s opacity;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
