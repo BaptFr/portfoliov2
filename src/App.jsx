@@ -6,7 +6,7 @@ import styles from './App.module.scss';
 function App() {
 
   return (
-    <div className= {` d-flex flex-column ${styles.appContainer}`}>
+    <div className=' d-flex flex-column background'>
       <Header />
       <Content />
       <Footer />
