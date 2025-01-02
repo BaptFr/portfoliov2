@@ -1,8 +1,19 @@
 
 function Content () {
     return (
-        <div className='b2 flex-fill container'>
-            CONTENT
+        <div className='b2 d-felx flex-fill flex-column container'>
+            <p> CONTENT </p>
+            <p> CONTENT </p>
+            <p> CONTENT </p>
+            <p> CONTENT </p>
+            <p> CONTENT </p>
+            <p> CONTENT </p>
+            <p> CONTENT </p>
+            <p> CONTENT </p>
+            <p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p><p> CONTENT </p>
+            <p> CONTENT </p>
+            <p> CONTENT </p>        
+            <p> CONTENT </p>
         </div>
     )
 };

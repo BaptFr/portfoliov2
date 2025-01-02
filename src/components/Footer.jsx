@@ -2,8 +2,8 @@
 
 function Footer () {
     return (
-        <footer>
-            <p>Copyright © 2022 Cookchef Dyma, Inc.</p>
+        <footer className= 'p-0 p-15 background-blurred '>
+            <p >Tous droits reservés  <br/> Baptiste Salazar <br/>© 2025</p>
         </footer>
     )
 };

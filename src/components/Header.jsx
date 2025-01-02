@@ -2,7 +2,7 @@ import styles from './Header.module.scss'
 
 function Header () {
     return (
-        <header className='b1'>
+        <header className=' d-flex flex-row background-blurred'>
             HEADER
         </header>
     )
