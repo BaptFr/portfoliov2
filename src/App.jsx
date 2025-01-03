@@ -6,7 +6,7 @@ import styles from './App.module.scss';
 function App() {
 
   return (
-    <div className=' d-flex flex-column background'>
+    <div className=' d-flex flex-column background' style={{ position: "relative" }}>
       <Header />
       <Content />
       <Footer />
