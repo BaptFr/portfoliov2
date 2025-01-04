@@ -2,6 +2,7 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 
+// Code reference source: npmjs.com "tsparticles"
 const Background = () => {
     const particlesInit = useCallback(async engine => {
         console.log(engine);
@@ -11,7 +12,6 @@ const Background = () => {
     const particlesLoaded = useCallback(async container => {
         await console.log(container);
     }, []);
-
 
   return (
         <div>
@@ -46,10 +46,10 @@ const Background = () => {
                     },
                     particles: {
                         color: {
-                            value: "#ffffff",
+                            value: "#000000",
                         },
                         links: {
-                            color: "#ffffff",
+                            color: "#000000",
                             distance: 150,
                             enable: true,
                             opacity: 0.5,
@@ -88,4 +88,5 @@ const Background = () => {
         </div>
   )
 }
-export default Background
+
+export default Background;

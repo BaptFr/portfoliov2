@@ -1,15 +1,31 @@
 import styles from './Content.module.scss';
+import LogoBanner from './LogoBanner';
 
 
 function Content () {
     return (
-        <div className= 'd-flex flex-fill flex-column front-content'>
-            <p> Début cont first = useContext(second)</p>
-            <p> CONTENT </p>
-            <p> CONTENT </p>
-            <p> CONTENT </p>
-            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
-            <p> Content </p><p> Content </p><p> Content </p><p> Content </p><p> Content </p><p> Content </p><p> Content </p><p> Content </p><p> Content </p><p> Content </p><p> Content </p><p> Content </p><p> Content </p><p> Content </p>
+        <div className= 'd-flex flex-fill flex-column front-content p-40'>
+            <section className='section text-center'>
+                <p> Bienvenue sur mon portfolio ! <br/><br/>
+                Après une ancienne vie dans le commerce, j'ai effectué une reconversion
+                professionnelle pour me plonger dans le développement web. <br/><br/>
+                Explorez ici une sélection de projets qui témoignent de mon parcours,
+                de ma formation et de mes compétences.
+                </p>
+            </section>
+
+            <div className='mt-20'>
+                TECHNOLOGIS & STACK
+                <LogoBanner />
+            </div>
+            <div className='mt-20'>
+            FORMATIONS
+            </div>
+
+            <div className='mt-20'>
+                LIENS
+            </div>
+
         </div>
     )
 };

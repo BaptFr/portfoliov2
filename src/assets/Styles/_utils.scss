@@ -1,3 +1,21 @@
+.container {
+    //max-wwidth: 1200px
+    margin: auto;
+    width: 100%;
+    background-color: transparent;
+}
+
+.section {
+    border-radius: 20px;
+    color: #000000;
+    box-shadow: 0 2px 2px (black);
+    background-color: #ffffff;
+    font-family: 'Marck Script';
+    font-size: 30px;
+    text-shadow: 0px 2px 3px black;
+}
+
+// paddings & margins & gap
 .p-5 {
     padding: 5px;
 }
@@ -16,6 +34,10 @@
 
 .p-30 {
     padding: 30px;
+}
+
+.p-40 {
+    padding: 40px;
 }
 
 .m-5 {
@@ -42,11 +64,35 @@
     margin-right: 10px;
 }
 
+.mt-10 {
+    margin-top: 10px;
+}
 
+.mt-15 {
+    margin-top: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
 .mb-20 {
     margin-bottom: 20px;
 }
 
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px
+}
+
+.gap-500 {
+    gap: 500px
+}
+
+
+//positions
 .t-0{
     top: 0;
 }
@@ -54,13 +100,13 @@
 .b-0 {
     bottom: 0;
 }
-.container {
-    //max-wwidth: 1200px
-    margin: auto;
-    width: 100%;
-    background-color: transparent;
-  }
 
-  .text-center {
+
+//text utils
+.text-center {
     text-align: center;
-  }
+}
+
+
+
+

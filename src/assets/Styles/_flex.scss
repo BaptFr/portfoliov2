@@ -18,6 +18,11 @@
     flex: 1 1 auto;
 }
 
+.all-center {
+    align-items: center;
+    justify-content: center,
+}
+
 .justify-content-center {
     justify-content: center;
 }
@@ -35,11 +40,12 @@
     flex-wrap: wrap;
 }
 
+.no-wrap {
+    flex-wrap: nowrap;
+}
+
+
 .align-items-center {
     align-items: center;
 }
 
-.all-center {
-    align-items: center;
-    justify-content: center,
-}

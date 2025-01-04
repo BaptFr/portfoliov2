@@ -1,0 +1,41 @@
+.banner {
+    position: relative;
+    margin: 0 -3% 0 -3%;
+    padding: 15px 0px;
+    overflow: hidden;
+    background-color: rgba(247, 240, 205, 0.9);
+    box-shadow: 0 5px 14px (black);
+  }
+
+.logos {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin-top: 50px;
+    opacity: 0.9;
+}
+
+.slide {
+    margin: 0;
+    display: flex;
+    gap: 100px;
+    flex-wrap: nowrap;
+    animation: slide 16s linear infinite; //Calibré
+}
+
+img{
+    width: 150px;
+    height: 140px;
+    flex-shrink: 0;
+}
+
+@keyframes slide{
+    0% {
+        transform: translateX(0%)
+    }
+
+    100%{
+        transform: translateX(-157.5%)  //Calibré
+    }
+}
+

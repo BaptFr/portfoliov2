@@ -2,11 +2,11 @@
   padding: 5px 15px;
   border : none;
   cursor: pointer;
-  font-family: 'Dm Serif Text';
-  font-size: 8px;
+  font-family: 'Pridi';
+  font-size: 18px;
   background-color: transparent;
-  color: #ffffff;
-  }
+  color: #000000;
+}
 
 .site-logo {
   max-width: 40px;
@@ -14,27 +14,31 @@
 }
 
 .icons{
-  font-size: 10px;
+  font-size: 20px;
+  color: #000000;
 }
 
 .background-blurred{
   width: 100%;
   text-align: center;
-  background-color: transparent;
-  //background-color: rgba(63, 12, 121, 0.671);
-  color: white;
-  }
+  background-color: var(--third);
+  color: #000000;
+}
 
 .hover-effect-classic {
-  transition: 0.2s opacity;
+  transition: 0.2s transform;
   &:hover {
-    opacity: 0.4;
+    transform: scale(1.1);
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    padding-bottom: 0px;
   }
 }
 
 .active-effect{
   transition: 0.2s transform;
   &:active {
-    transform : scale(0.8)
+    transform : scale(0.8);
+    border-bottom: none;
   }
 }
