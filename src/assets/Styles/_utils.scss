@@ -2,52 +2,46 @@
     //max-wwidth: 1200px
     margin: auto;
     width: 100%;
-    background-color: transparent;
 }
-
 .section {
+    z-index: 1;
     border-radius: 20px;
-    color: #000000;
+    color: #ffffff;
+    background-color: (--primary);
     box-shadow: 0 2px 2px (black);
-    background-color: #ffffff;
     font-family: 'Marck Script';
-    font-size: 30px;
+    font-size: 16px;
     text-shadow: 0px 2px 3px black;
+    p{
+        color: #ffffff;
+    }
 }
 
 // paddings & margins & gap
 .p-5 {
     padding: 5px;
 }
-
 .p-10 {
     padding: 10px;
 }
-
 .p-15 {
     padding: 15px;
 }
-
 .p-20 {
     padding: 20px;
 }
-
 .p-30 {
     padding: 30px;
 }
-
 .p-40 {
     padding: 40px;
 }
-
 .m-5 {
     margin: 5px;
 }
-
 .m-10 {
     margin: 10px;
 }
-
 .m-15 {
     margin: 15px;
 }
@@ -55,7 +49,6 @@
 .m-20 {
     margin: 20px;
 }
-
 .mr-5 {
     margin-right: 5px;
 }
@@ -63,17 +56,24 @@
 .mr-10 {
     margin-right: 10px;
 }
-
+.mr-15 {
+    margin-right: 15px;
+}
+.mr-20 {
+    margin-right: 20px;
+}
 .mt-10 {
     margin-top: 10px;
 }
-
 .mt-15 {
     margin-top: 20px;
 }
-
 .mt-20 {
     margin-top: 20px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
 }
 .mb-20 {
     margin-bottom: 20px;
