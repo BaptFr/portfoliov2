@@ -3,7 +3,7 @@ import styles from './Content.module.scss';
 
 function Content () {
     return (
-        <div className= 'd-flex flex-fill flex-column container '>
+        <div className= 'd-flex flex-fill flex-column front-content'>
             <p> Début cont first = useContext(second)</p>
             <p> CONTENT </p>
             <p> CONTENT </p>
