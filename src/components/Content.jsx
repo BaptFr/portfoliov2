@@ -13,6 +13,7 @@ function Content () {
                 de ma formation et de mes compétences.
                 </p>
             </section>
+            
 
             <div className='mt-20'>
                 TECHNOLOGIS & STACK

@@ -6,14 +6,12 @@ import styles from './App.module.scss';
 
 function App() {
   return (
-    <div className='d-flex flex-column background-image background-animation'>
-      <Background />
-      <div>
+    <div >
+      <div className= ' d-flex flex-column background '>
         <Header />
         <Content />
         <Footer />
       </div>
-
     </div>
   )
 }

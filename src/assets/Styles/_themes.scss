@@ -1,13 +1,22 @@
+.section {
+  z-index: 1;
+  padding: 20px;
+  font-family: 'Marck Script';
+  font-size: 30px;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: rgba(black, 0.8);
+}
+
 .btn {
   padding: 5px 15px 0px 4px;
   border : none;
   font-family: 'Cuprum';
-  background-color: transparent;
   color: #ffffff;
+  background-color: var(--primary);
   font-size: 18px;
   transition: all  0.1s;
 }
-
 .hover-effect-btn{
   &:hover {
     .btn,
@@ -17,7 +26,6 @@
     }
   }
 }
-
 
 .site-logo {
   max-width: 40px;
@@ -35,8 +43,6 @@
   background-color: transparent;
   color: #ffffff;
 }
-
-
 
 .active-effect{
   transition: 0.2s transform;

@@ -50,7 +50,7 @@ const Background = () => {
                         },
                         links: {
                             color: "#ffffff",
-                            distance: 150,
+                            distance: 65,
                             enable: true,
                             opacity: 0.5,
                             width: 1,
@@ -62,18 +62,18 @@ const Background = () => {
                                 default: "bounce",
                             },
                             random: false,
-                            speed: 4,
+                            speed: 2,
                             straight: false,
                         },
                         number: {
                             density: {
                                 enable: true,
-                                area: 800,
+                                area: 350,
                             },
                             value: 95,
                         },
                         opacity: {
-                            value: 0.4,
+                            value: 1,
                         },
                         shape: {
                             type: "circle",

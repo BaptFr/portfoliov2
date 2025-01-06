@@ -46,13 +46,14 @@ img {
 //     background-position: center;
 //  }
 
-.background-animation {
-    position: relative;
+.background {
     z-index: -1;
     overflow: hidden;
     background-color: var(--primary);
 }
 
-.front-content {
-    z-index: 1;
-}
+.background-animation {
+    z-index: -1;
+    overflow: hidden;
+    background-color:  red;
+  }
