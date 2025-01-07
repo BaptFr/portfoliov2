@@ -16,9 +16,30 @@ body {
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: 'Cuprum';
-    font-size:20px;
+    font-family: 'Outfit';
+    font-size: 19px;
     color: #000000;
+}
+
+p {
+    font-size: 19px;
+}
+
+.article {
+    width: 45%;
+    text-align: center;
+    padding: 0px 35px;
+}
+
+.title{
+    font-size: 45px;
+    color: white;
+    font-weight: 500;
+}
+
+.title-color{
+    font-size: 45px;
+    color: var(--primary);
 }
 
 ul {
@@ -36,24 +57,26 @@ img {
 //     background-color: #0000000;
 // };
 
-// .background-image{
-//     position: absolute;
-//     width: 100%;
-//     top: 0;
-//     left: 0;
-//     background-image: url('../images/background13.png');
-//     background-size: cover;
-//     background-position: center;
-//  }
+.background-image{
+    background-image: url('../images/bck2.jpg');
+    background-size: contain;
+ }
 
-.background {
-    z-index: -1;
-    overflow: hidden;
-    background-color: var(--primary);
-}
+// .background {
+//     z-index: -1;
+//     overflow: hidden;
+//     background-color: var(--primary);
+// }
 
 .background-animation {
     z-index: -1;
     overflow: hidden;
     background-color:  red;
-  }
+}
+
+a.active {
+    & .btn{
+        color: white;
+        text-decoration:black;
+    }
+}

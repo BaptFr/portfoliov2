@@ -1,12 +1,17 @@
 :root {
-    --primary: #010B13;
-    --secondary: #010B10;
-    --third: #ffd06e;
-    --blue1: #0C77EC;
-    --blue2: #01295F;
-    --grey1: #262626;
+    --primary: #000025;
+    --secondary: #10003b;
+    --third: #19193a;
+    --blue1: #6c7af7;
+    --blue2: #353c8d;
+    --blue3: #21214b;
+    --blue4: #171051;
+    --grey1: #858585;
     --grey2: #3d3e42;
-    --gey3: #242424
+    --gey3: #242424;
+    --border-blue:#332d7c;
     --box-shadow: 0 6px 9px 0 rgb(0 0 0 / 15%);
     --box-shadow-nav: 0px 2px 18px 0px rgb(0 0 0 /20%);
+    --linear-gradient: linear-gradient(to top, rgb(40, 40, 90), rgba(33, 33, 75, 0));
+    --opacity8: 0.8;
 }

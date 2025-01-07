@@ -3,8 +3,7 @@ import App from "./App";
 import { lazy } from "react";
 
 const Homepage= lazy (() => import('./pages/homepage/Homepage'));
-
-
+const Projetspage= lazy( () => import ('./pages/projetspage/Projetspage'));
 
 export const router = createBrowserRouter([
     {
@@ -14,6 +13,10 @@ export const router = createBrowserRouter([
             {
                 index: true,
                 element: <Homepage />
+            },
+            {
+                path:'projets',
+                element: <Projetspage />
             },
         ]
     },
