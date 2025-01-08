@@ -1,6 +1,5 @@
 import styles from './Homepage.module.scss';
 import introImage from '../../assets/images/intro-image.webp';
-import LogoBanner from '../../components/LogoBanner';
 import LogoBannerDyn from '../../components/LogoBannerDyn';
 import techsData from '../../data/stack.json';
 
@@ -29,7 +28,10 @@ function Homepage () {
                     <div className={`${styles.feContainer} d-flex flex-column`}>
                         <h3 className='text-center'>Front-end</h3>
 
-                        <div className='d-flex flex-row justify-content-sb'>
+                        <div className='d-flex flex-row justify-content-sa'>
+                            <div>
+                                <LogoBannerDyn jsonFile='./src/data/stack.json' />
+                            </div>
                             <div className={styles.techList}>
                                 <ul className='tech-names-list'>
                                     {techsData.map((tech) => (
@@ -39,16 +41,13 @@ function Homepage () {
                                     ))}
                                 </ul>
                             </div>
-                            <div>
-                                <LogoBannerDyn jsonFile='./src/data/stack.json' />
-                            </div>
                         </div>
                     </div>
 
-                    {/* Back container */}
+                    {/* Back-end container */}
                     <div className={`${styles.feContainer} d-flex flex-column`}>
-                        <h3 className='text-center'>Front-end</h3>
-                        <div className='d-flex flex-row justify-content-sb'>
+                        <h3 className='text-center'>Back -end</h3>
+                        <div className='d-flex flex-row justify-content-sa'>
                             <div className={styles.techList}>
                                 <ul className='tech-names-list'>
                                     {techsData.map((tech) => (
