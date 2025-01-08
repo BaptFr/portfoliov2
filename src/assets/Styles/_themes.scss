@@ -3,16 +3,7 @@
   padding: 20px;
   font-family: 'Outfit';
   font-size: 30px;
-  border-radius: 20px;
   color: #ffffff;
-}
-
-.border-style{
-  background-color: rgba(18, 7, 65, 0.2);
-  backdrop-filter: blur(4px);
-  border-radius: 20px;
-  border-top: 1px solid var(--grey1);
-  border-left: 1px solid var(--grey2);
 }
 
 .btn {
@@ -22,8 +13,7 @@
   color: #ffffff;
   background-color: transparent;
   font-size: 18px;
-  transition: all  0.1s;
-  backdrop-filter: none;
+  transition: all  0.2s;
 }
 
 .hover-effect-btn{
@@ -31,9 +21,48 @@
     .btn,
     .icons{
     cursor: pointer;
-    color: var(--third);
+    color: var(--grey1);
     }
   }
+}
+
+// Cards
+
+.small-card {
+  position: relative;
+  z-index: 2;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  color: #ffffff;
+  transition: all 0.2s;
+    &:hover {
+      transform: scale(1.1)
+    }
+}
+
+// .small-card-overlay{
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background-color: rgba(0, 0, 0, 0.6);
+//   color: white;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   opacity: 0;
+//   transition: opacity 0.3s ease;
+// }
+
+
+.border-style{
+  background-color: rgba(18, 7, 65, 0.2);
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+  border-top: 1px solid var(--grey1);
+  border-left: 1px solid var(--grey2);
 }
 
 .site-logo {
@@ -46,15 +75,12 @@
   color: #ffffff;
 }
 
+
+//Backgrounds
+
 .background-blurred{
-  background-color: rgba(18, 7, 65, 0.2);
-  backdrop-filter: blur(10px);
+  background-color: rgba(18, 7, 65, 0.8);
+  backdrop-filter: blur(15px);
 }
 
-.active-effect{
-  transition: 0.2s transform;
-  &:active {
-    transform : scale(0.8);
-    border-bottom: none;
-  }
-}
+

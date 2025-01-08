@@ -11,7 +11,9 @@ function App() {
   return (
     <div >
       <div className= 'd-flex flex-column background background-image '>
+        <div className='header-fixed'>
         <Header />
+        </div>
         <div className= ' d-flex flex-column'>
         <Suspense>
           <Outlet />

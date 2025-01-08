@@ -2,8 +2,8 @@
 
 function Footer () {
     return (
-        <footer className= 'p-0 p-5 text-align-center background-blurred '>
-            <p >Tous droits reservés  <br/> Baptiste Salazar <br/>© 2025</p>
+        <footer className= 'p-0 p-5  background-blurred'>
+            <p className='text-center'>Tous droits reservés  <br/> Baptiste Salazar <br/>© 2025</p>
         </footer>
     )
 };

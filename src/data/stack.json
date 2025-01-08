@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "name":"React",
+        "image":"./src/assets/logos/react-logo.webp"
+    },
+    {
+        "id": "2",
+        "name":"JavaScript",
+        "image":"./src/assets/logos/js-logo.webp"
+    },
+    {
+        "id": "3",
+        "name":"SCSS / Sass",
+        "image":"./src/assets/logos/sass-logo.webp"
+    },
+    {
+        "id": "4",
+        "name":"CSS",
+        "image":"./src/assets/logos/css-logo.webp"
+    },
+    {
+        "id": "5",
+        "name":"HTML",
+        "image":"./src/assets/logos/html-logo.webp"
+    }
+]
