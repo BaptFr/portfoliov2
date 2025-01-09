@@ -44,11 +44,6 @@
         },
         {
             "id": "10",
-            "name":"Postman",
-            "image":"./src/assets/logos/postman-logo.webp"
-        },
-        {
-            "id": "11",
             "name":"MongoDB",
             "image":"./src/assets/logos/mongo-logo.webp"
         }
@@ -66,16 +61,21 @@
         },
         {
             "id": "13",
+            "name":"Postman",
+            "image":"./src/assets/logos/postman-logo.webp"
+        },
+        {
+            "id": "14",
             "name":"Figma",
             "image":"./src/assets/logos/figma-logo.webp"
         },
         {
-            "id": "14",
+            "id": "15",
             "name":"Notion",
             "image":"./src/assets/logos/notion-logo.webp"
         },
         {
-            "id": "15",
+            "id": "16",
             "name":"Trello",
             "image":"./src/assets/logos/trello-logo.webp"
         }

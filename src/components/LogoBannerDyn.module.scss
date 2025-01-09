@@ -7,7 +7,6 @@
     display: flex;
     overflow: hidden;
     background-color: transparent;
-    mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
     mask-repeat: no-repeat;
     mask-size: 100% 100%;
 }
@@ -20,13 +19,23 @@
     opacity: 0.9;
 }
 
-.slide {
+.slideY {
     margin: 0;
     display: flex;
     flex-direction: column;
     gap: 100px;
     flex-wrap: nowrap;
-    animation: slide 11s linear infinite;
+    animation: slideY 11s linear infinite;
+    //animation: slide 16s linear infinite; //Calibré horizontale
+}
+
+.slideX {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    flex-wrap: nowrap;
+    animation: slideX 20s linear infinite;
     //animation: slide 16s linear infinite; //Calibré horizontale
 }
 
@@ -36,7 +45,7 @@ img{
     flex-shrink: 0;
 }
 
-@keyframes slide{
+@keyframes slideY{
     0% {
         transform: translateY(15%)
     }
@@ -44,6 +53,18 @@ img{
     100%{
         //transform: translateY(-157.5%)  //Calibré horizontale
         transform: translateY(-225%)
+
+    }
+}
+
+@keyframes slideX{
+    0% {
+        transform: translateX(15%)
+    }
+
+    100%{
+        //transform: translateY(-157.5%)  //Calibré horizontale
+        transform: translateX(-225%)
 
     }
 }

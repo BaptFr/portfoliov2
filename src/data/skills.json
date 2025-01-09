@@ -1,0 +1,11 @@
+{
+    "competences": [
+        {
+            "id": "1",
+            "name":"seo",
+            "title":"SEO",
+            "image":"./src/assets/images/intro-image.webp",
+            "text":" Blalblbblabla TEST"
+        }
+    ]
+}
