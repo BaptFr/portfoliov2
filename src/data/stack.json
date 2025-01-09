@@ -1,27 +1,83 @@
-[
-    {
-        "id": "1",
-        "name":"React",
-        "image":"./src/assets/logos/react-logo.webp"
-    },
-    {
-        "id": "2",
-        "name":"JavaScript",
-        "image":"./src/assets/logos/js-logo.webp"
-    },
-    {
-        "id": "3",
-        "name":"SCSS / Sass",
-        "image":"./src/assets/logos/sass-logo.webp"
-    },
-    {
-        "id": "4",
-        "name":"CSS",
-        "image":"./src/assets/logos/css-logo.webp"
-    },
-    {
-        "id": "5",
-        "name":"HTML",
-        "image":"./src/assets/logos/html-logo.webp"
-    }
-]
+{
+    "frontEnd": [
+        {
+            "id": "1",
+            "name":"React",
+            "image":"./src/assets/logos/react-logo.webp"
+        },
+        {
+            "id": "2",
+            "name":"JavaScript",
+            "image":"./src/assets/logos/js-logo.webp"
+        },
+        {
+            "id": "3",
+            "name":"SCSS / Sass",
+            "image":"./src/assets/logos/sass-logo.webp"
+        },
+        {
+            "id": "4",
+            "name":"CSS",
+            "image":"./src/assets/logos/css-logo.webp"
+        },
+        {
+            "id": "5",
+            "name":"HTML",
+            "image":"./src/assets/logos/html-logo.webp"
+        }
+    ],
+    "backEnd": [
+        {
+            "id": "6",
+            "name":"NodeJS",
+            "image":"./src/assets/logos/node-logo.webp"
+        },
+        {
+            "id": "7",
+            "name":"ExpressJS",
+            "image":"./src/assets/logos/express-logo.webp"
+        },
+        {
+            "id": "8",
+            "name":"API REST",
+            "image":"./src/assets/logos/api-logo.webp"
+        },
+        {
+            "id": "10",
+            "name":"Postman",
+            "image":"./src/assets/logos/postman-logo.webp"
+        },
+        {
+            "id": "11",
+            "name":"MongoDB",
+            "image":"./src/assets/logos/mongo-logo.webp"
+        }
+    ],
+    "outils": [
+        {
+            "id": "11",
+            "name":"Git",
+            "image":"./src/assets/logos/git-logo.webp"
+        },
+        {
+            "id": "12",
+            "name":"GitHub",
+            "image":"./src/assets/logos/github-logo.webp"
+        },
+        {
+            "id": "13",
+            "name":"Figma",
+            "image":"./src/assets/logos/figma-logo.webp"
+        },
+        {
+            "id": "14",
+            "name":"Notion",
+            "image":"./src/assets/logos/notion-logo.webp"
+        },
+        {
+            "id": "15",
+            "name":"Trello",
+            "image":"./src/assets/logos/trello-logo.webp"
+        }
+    ]
+}

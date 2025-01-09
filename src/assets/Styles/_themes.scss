@@ -1,9 +1,16 @@
 .section {
   z-index: 1;
+  margin-top: 20px;
   padding: 20px;
   font-family: 'Outfit';
   font-size: 30px;
   color: #ffffff;
+}
+
+.article {
+  width: 50%;
+  text-align: center;
+  padding: 0px 35px;
 }
 
 .btn {

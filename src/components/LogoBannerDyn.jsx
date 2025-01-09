@@ -1,7 +1,7 @@
 import styles from './LogoBannerDyn.module.scss';
 import { useState, useEffect } from 'react';
 
-function LogosBannerDyn({ jsonFile }) {
+function LogosBannerDyn({ jsonFile, sectionKey }) {
     const [logos, setLogos] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -17,7 +17,9 @@ function LogosBannerDyn({ jsonFile }) {
         })
         .then((data) => {
           // Vérif tableau
-          if (Array.isArray(data)) {
+          if (sectionKey && data[sectionKey]) {
+            setLogos(data[sectionKey]);
+          } else if (Array.isArray(data)) {
             setLogos(data);
           } else {
             throw new Error('Les données ne sont pas au format attendu');
@@ -28,7 +30,7 @@ function LogosBannerDyn({ jsonFile }) {
           setError(err);
           setLoading(false);
         });
-    }, [jsonFile]);
+    }, [jsonFile, sectionKey]);
 
     if (loading) return <p>Chargement...</p>;
     if (error) return <p>Erreur : {error.message}</p>;
@@ -36,12 +38,6 @@ function LogosBannerDyn({ jsonFile }) {
     return (
         <div className={styles.banner}>
             <div className={styles.slide}>
-                {logos.map((logo) => (
-                    <img key={logo.id} src={logo.image} alt={`logo ${logo.name}`} loading="lazy" />
-                ))}
-                {logos.map((logo) => (
-                    <img key={logo.id} src={logo.image} alt={`logo ${logo.name}`} loading="lazy" />
-                ))}
                 {logos.map((logo) => (
                     <img key={logo.id} src={logo.image} alt={`logo ${logo.name}`} loading="lazy" />
                 ))}
