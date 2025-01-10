@@ -3,9 +3,11 @@ import introImage from '../../assets/images/intro-image.webp';
 import LogoBannerDyn from '../../components/LogoBannerDyn';
 import SmallCard from '../../components/SmallCard';
 import techsData from '../../data/stack.json';
+import TechSection from '../../components/Stack';
 
 
 function Homepage () {
+
     return (
         <div className= 'd-flex flex-fill flex-column p-40 front-content '>
             <section className='section d-flex flex-row justify-content-sa align-items-center wrap'>
@@ -20,104 +22,16 @@ function Homepage () {
                 <img src={introImage} alt='intro-portrait' className={styles.introImage} />
             </section>
 
-            <section className='mt-20 section d-flex flex-column '>
+             TEST test TEST  STACK TECHNIQUE SECTION CONTAINER
+
+            {/* SECTION STACK  section (code more robust) */}
+            <section>
                 <h2> STACK TECHNIQUE</h2>
-
-                {/* TECH CONTAINER */}
-                <div className='d-flex flex-row justify-content-sb'>
-
-                    {/* Front-end container */}
-                    <div className={`${styles.feContainer} d-flex flex-column`}>
-                        <h3 className='text-center'>Front-end</h3>
-
-                        <div className='d-flex flex-row justify-content-sa mt-30'>
-                            <div>
-                                <LogoBannerDyn
-                                    jsonFile='./src/data/stack.json'
-                                    sectionKey='frontEnd'/>
-                            </div>
-                            <div>
-                                <ul>
-                                    {techsData.frontEnd.map((tech) => (
-                                        <li key={tech.id}>
-                                            {tech.name}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    {/* Back-end container */}
-                    <div className={`${styles.feContainer} d-flex flex-column`}>
-                        <h3>Back-end</h3>
-                        <div className='d-flex flex-row justify-content-sa'>
-                            <div>
-                                <LogoBannerDyn
-                                    jsonFile='./src/data/stack.json'
-                                    sectionKey='backEnd'/>
-                            </div>
-                            <div className='mt-30' >
-                                <ul>
-                                    {techsData.backEnd.map((tech) => (
-                                        <li key={tech.id}>
-                                            {tech.name}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                {/* TOOLSCONTAINER */}
-                <div className='d-flex flex-row justify-content-sb'>
-
-                    {/* Dev tools */}
-                    <div className={`${styles.feContainer} d-flex flex-column`}>
-                        <h3>Outils & optimisation/SEO </h3>
-                        <div className='d-flex flex-row justify-content-sa'>
-                            <div>
-                                <LogoBannerDyn
-                                    jsonFile='./src/data/stack.json'
-                                    sectionKey='outils'/>
-                            </div>
-                            <div className='mt-30' >
-                                <ul>
-                                    {techsData.outils.map((tech) => (
-                                        <li key={tech.id}>
-                                            {tech.name}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div className={`${styles.feContainer} d-flex flex-column`}>
-                        <h3>Back-end</h3>
-                        <div className='d-flex flex-row justify-content-sa'>
-                            <div>
-                                <LogoBannerDyn
-                                    jsonFile='./src/data/stack.json'
-                                    sectionKey='backEnd'/>
-                            </div>
-                            <div className='mt-30' >
-                                <ul>
-                                    {techsData.backEnd.map((tech) => (
-                                        <li key={tech.id}>
-                                            {tech.name}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+                <TechSection />
             </section>
-            {/* compétences section */}
+
+
+            {/* COMPETENCES section */}
             <section className='section'>
                 <h2> COMPETENCES TRANSVERSALES </h2>
                 <div className='card-container'>

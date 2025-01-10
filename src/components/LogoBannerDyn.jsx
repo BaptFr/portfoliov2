@@ -47,7 +47,7 @@ function LogosBannerDyn({ jsonFile, sectionKey, direction = "vertical" }) {
                 {logos.map((logo) => (
                     <img key={logo.id} src={logo.image} alt={`logo ${logo.name}`} loading="lazy" />
                 ))}
-                </div>
+            </div>
         </div>
         );
     }

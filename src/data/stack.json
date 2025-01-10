@@ -1,5 +1,5 @@
 {
-    "frontEnd": [
+    "frontend": [
         {
             "id": "1",
             "name":"React",
@@ -26,7 +26,7 @@
             "image":"./src/assets/logos/html-logo.webp"
         }
     ],
-    "backEnd": [
+    "backend": [
         {
             "id": "6",
             "name":"NodeJS",
@@ -48,7 +48,7 @@
             "image":"./src/assets/logos/mongo-logo.webp"
         }
     ],
-    "outils": [
+    "devtools": [
         {
             "id": "11",
             "name":"Git",
@@ -62,21 +62,60 @@
         {
             "id": "13",
             "name":"Postman",
-            "image":"./src/assets/logos/postman-logo.webp"
+            "image":"./src/assets/logos/github-logo.webp"
         },
         {
             "id": "14",
+            "name":"Vercel",
+            "image":"./src/assets/logos/github-logo.webp"
+        }
+    ],
+    "seotools": [
+        {
+            "id": "15",
+            "name":"Chrome DevTools",
+            "image":"./src/assets/logos/github-logo.webp"
+        },
+        {
+            "id": "16",
+            "name":"Google Lightouse",
+            "image":"./src/assets/logos/github-logo.webp"
+        },
+        {
+            "id": "17",
+            "name":"Schema.org",
+            "image":"./src/assets/logos/github-logo.webp"
+        },
+        {
+            "id": "17",
+            "name":"Wave ",
+            "image":"./src/assets/logos/github-logo.webp"
+        }
+    ],
+    "collaborationtools": [
+        {
+            "id": "18",
             "name":"Figma",
             "image":"./src/assets/logos/figma-logo.webp"
         },
         {
-            "id": "15",
+            "id": "19",
             "name":"Notion",
             "image":"./src/assets/logos/notion-logo.webp"
         },
         {
-            "id": "16",
+            "id": "20",
             "name":"Trello",
+            "image":"./src/assets/logos/trello-logo.webp"
+        },
+        {
+            "id": "21",
+            "name":"Slacks",
+            "image":"./src/assets/logos/trello-logo.webp"
+        },
+        {
+            "id": "22",
+            "name":"Feedly",
             "image":"./src/assets/logos/trello-logo.webp"
         }
     ]
