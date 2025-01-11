@@ -7,12 +7,15 @@ const sections = [
     { title: 'Front-end', key: 'frontend' },
     { title: 'Back-end', key: 'backend', dataKey: 'backend' },
     { title: (
-        <>Outils de développement <br /> et contrôle de version </>), 
+        <>Outils de développement <br /> et contrôle de version </>),
         key: 'devtools', dataKey: 'devtools' },
     { title: (
-        <>Outils de debug<br /> optimisation & SEO </>), 
+        <>Outils de debug<br /> optimisation & SEO </>),
          key: 'seotools', dataKey: 'seotools' },
-    { title: 'Outils de collaboration & veille', key: 'collaborationtools', dataKey: 'collaborationtools' },
+    { title: (
+        <>Outils de collaboration <br /> & veille</>),
+         key: 'collaborationtools',
+         dataKey: 'collaborationtools' },
 ];
 
 const TechSection = () => {
@@ -42,11 +45,10 @@ const TechSection = () => {
 
     return (
         <div className={styles.sectionContainer}>
-
             {sections.map(({ title, key }) => (
-                <div className='cardContainer' key={key}>
+                <div className={styles.techCardContainer} key={key}>
                     <h3>{title}</h3>
-                    <div className={styles.techcontainer}>
+                    <div className={styles.techContainer}>
                         <div className='techBanner'>
                             <LogoBannerDyn
                                 jsonFile="./src/data/stack.json"

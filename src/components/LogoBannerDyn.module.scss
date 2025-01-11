@@ -1,4 +1,5 @@
 .banner {
+    position: relative;
     height: 450px;
     margin: 0;
     padding: 0px 10px;
@@ -6,6 +7,7 @@
     background-color: transparent;
     mask-repeat: no-repeat;
     mask-size: 100% 100%;
+    mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
 }
 
 .logos {
@@ -21,23 +23,23 @@
     flex-direction: column;
     gap: 100px;
     flex-wrap: nowrap;
-    animation: slideY 20s linear infinite;
+    animation: slideY 17s linear infinite;
     //animation: slide 16s linear infinite; //Calibré horizontale
 }
 
-.slideX {
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 150px;
-    flex-wrap: nowrap;
-    animation: slideX 10s linear infinite;
-    //animation: slide 16s linear infinite; //Calibré horizontale
-}
+// .slideX {
+//     margin: 0;
+//     display: flex;
+//     flex-direction: row;
+//     gap: 150px;
+//     flex-wrap: nowrap;
+//     animation: slideX 10s linear infinite;
+//     //animation: slide 16s linear infinite; //Calibré horizontale
+// }
 
 img{
-    width: 150px;
-    height: 140px;
+    width: 100px;
+    height: 90px;
     flex-shrink: 0;
 }
 
@@ -48,14 +50,14 @@ img{
 
     100%{
         //transform: translateY(-157.5%)  //Calibré horizontale
-        transform: translateY(-50%)
+        transform: translateY(-100%)
 
     }
 }
 
 @keyframes slideX{
     0% {
-        transform: translateX(150%)
+        transform: translateX(0%)
     }
 
     100%{

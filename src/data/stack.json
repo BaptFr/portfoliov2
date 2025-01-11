@@ -51,45 +51,45 @@
     "devtools": [
         {
             "id": "11",
+            "name":"Postman",
+            "image":"./src/assets/logos/postman-logo.webp"
+        },
+        {
+            "id": "12",
             "name":"Git",
             "image":"./src/assets/logos/git-logo.webp"
         },
         {
-            "id": "12",
+            "id": "13",
             "name":"GitHub",
             "image":"./src/assets/logos/github-logo.webp"
-        },
-        {
-            "id": "13",
-            "name":"Postman",
-            "image":"./src/assets/logos/github-logo.webp"
-        },
+        },  
         {
             "id": "14",
             "name":"Vercel",
-            "image":"./src/assets/logos/github-logo.webp"
+            "image":"./src/assets/logos/vercel-logo.webp"
         }
     ],
     "seotools": [
         {
             "id": "15",
             "name":"Chrome DevTools",
-            "image":"./src/assets/logos/github-logo.webp"
+            "image":"./src/assets/logos/devtools-logo.webp"
         },
         {
             "id": "16",
             "name":"Google Lightouse",
-            "image":"./src/assets/logos/github-logo.webp"
+            "image":"./src/assets/logos/lighthouse-logo.webp"
         },
         {
             "id": "17",
             "name":"Schema.org",
-            "image":"./src/assets/logos/github-logo.webp"
+            "image":"./src/assets/logos/schema-logo.webp"
         },
         {
             "id": "17",
             "name":"Wave ",
-            "image":"./src/assets/logos/github-logo.webp"
+            "image":"./src/assets/logos/wave-logo.webp"
         }
     ],
     "collaborationtools": [
@@ -111,12 +111,12 @@
         {
             "id": "21",
             "name":"Slacks",
-            "image":"./src/assets/logos/trello-logo.webp"
+            "image":"./src/assets/logos/slacks-logo.webp"
         },
         {
             "id": "22",
             "name":"Feedly",
-            "image":"./src/assets/logos/trello-logo.webp"
+            "image":"./src/assets/logos/feedly-logo.webp"
         }
     ]
 }

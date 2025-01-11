@@ -1,8 +1,6 @@
 import styles from './Homepage.module.scss';
 import introImage from '../../assets/images/intro-image.webp';
-import LogoBannerDyn from '../../components/LogoBannerDyn';
 import SmallCard from '../../components/SmallCard';
-import techsData from '../../data/stack.json';
 import TechSection from '../../components/Stack';
 
 
