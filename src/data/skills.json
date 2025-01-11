@@ -1,11 +1,23 @@
-{
-    "competences": [
-        {
-            "id": "1",
-            "name":"seo",
-            "title":"SEO",
-            "image":"./src/assets/images/intro-image.webp",
-            "text":" TEST test TEST"
-        }
-    ]
-}
+[
+    {
+        "id": "1",
+        "name":"seo",
+        "title":"SEO",
+        "image":"./src/assets/images/intro-image.webp",
+        "text":" TEST"
+    },
+    {
+        "id": "2",
+        "name":"seo",
+        "title":"SEO",
+        "image":"./src/assets/images/intro-image.webp",
+        "text":" TEST test TEST"
+    },
+    {
+        "id": "3",
+        "name":"seo",
+        "title":"SEO",
+        "image":"./src/assets/images/intro-image.webp",
+        "text":" TEST test TEST"
+    }
+]

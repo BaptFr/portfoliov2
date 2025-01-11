@@ -44,7 +44,7 @@ const TechSection = () => {
     };
 
     return (
-        <div className={styles.sectionContainer}>
+        <div className={styles.stackSectionContainer}>
             {sections.map(({ title, key }) => (
                 <div className={styles.techCardContainer} key={key}>
                     <h3>{title}</h3>

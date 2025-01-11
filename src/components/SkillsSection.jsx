@@ -1,14 +1,13 @@
 import { useState, useEffect } from 'react';
-import styles from './SmallCard.module.scss';
+import styles from './SkillsSection.module.scss';
 
-function SmallCard ({ jsonFile, sectionKey, competence}) {
-    const [card, setCard] = useState(null);
+function SkillsSection () {
+    const [cards, setCards] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-
     useEffect (()=> {
-        fetch(jsonFile)
+        fetch('./src/data/skills.json')
         .then (response => {
             if(!response.ok) {
                 console.error('Error fetching data:', response.statusText);
@@ -17,14 +16,9 @@ function SmallCard ({ jsonFile, sectionKey, competence}) {
             return response.json();
         })
         .then((data) => {
-            if (data[sectionKey]) {
-                //Find the choosen datas for the card
-                const selectedCard = data[sectionKey].find(item => item.name === competence);
-                if(selectedCard) {
-                    setCard(selectedCard);
-                } else {
-                    throw new Error ('Unexisting Datas(comp name)');
-                }
+            if (data && Array.isArray(data)) {
+
+                setCards(data);
             }else{
                 throw new Error ('Unexisting Data section');
             }
@@ -36,21 +30,22 @@ function SmallCard ({ jsonFile, sectionKey, competence}) {
             setLoading(false);
         });
 
-        }, [jsonFile, sectionKey, competence]);
-
-
+        }, []);
 
     if (loading) return <p>Chargement...</p>;
     if (error) return <p>Erreur : {error}</p>;
 
-
-    return card ? (
-        <div className={styles.smallCard}>
-            <h3>{card.title}</h3>
-            <img src={card.image} alt='dessin-competence'></img>
-            <p> {card.text}</p>
+    return cards.length > 0 ? (
+        <div className={`${styles.skillsSection} d-flex flex-row justify-content-sb wrap gap-50  `}>
+            {cards.map((card) => (
+                <div key={card.id} className='CardContainer'>
+                    <h3>{card.title}</h3>
+                    <p className={styles.skillsTextContainer}> {card.text}</p>
+                    <img src={card.image} alt={`sketch-${card.title}`}></img>
+                </div >
+        ))}
         </div>
     ) : ( <p> Pas de données disponibles / No datas available</p>)
 }
 
-export default SmallCard;
+export default SkillsSection;

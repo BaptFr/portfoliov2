@@ -87,34 +87,34 @@
             "image":"./src/assets/logos/schema-logo.webp"
         },
         {
-            "id": "17",
+            "id": "18",
             "name":"Wave ",
             "image":"./src/assets/logos/wave-logo.webp"
         }
     ],
     "collaborationtools": [
         {
-            "id": "18",
+            "id": "19",
             "name":"Figma",
             "image":"./src/assets/logos/figma-logo.webp"
         },
         {
-            "id": "19",
+            "id": "20",
             "name":"Notion",
             "image":"./src/assets/logos/notion-logo.webp"
         },
         {
-            "id": "20",
+            "id": "21",
             "name":"Trello",
             "image":"./src/assets/logos/trello-logo.webp"
         },
         {
-            "id": "21",
+            "id": "22",
             "name":"Slacks",
             "image":"./src/assets/logos/slacks-logo.webp"
         },
         {
-            "id": "22",
+            "id": "23",
             "name":"Feedly",
             "image":"./src/assets/logos/feedly-logo.webp"
         }

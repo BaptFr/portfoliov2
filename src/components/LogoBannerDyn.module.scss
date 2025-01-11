@@ -23,7 +23,7 @@
     flex-direction: column;
     gap: 100px;
     flex-wrap: nowrap;
-    animation: slideY 17s linear infinite;
+    animation: slideY 18s linear infinite;
     //animation: slide 16s linear infinite; //Calibré horizontale
 }
 
@@ -45,24 +45,24 @@ img{
 
 @keyframes slideY{
     0% {
-        transform: translateY(10%)
+        transform: translateY(0%)
     }
 
     100%{
         //transform: translateY(-157.5%)  //Calibré horizontale
-        transform: translateY(-100%)
+        transform: translateY(-69%)
 
     }
 }
 
-@keyframes slideX{
-    0% {
-        transform: translateX(0%)
-    }
+// @keyframes slideX{
+//     0% {
+//         transform: translateX(0%)
+//     }
 
-    100%{
-        //transform: translateY(-157.5%)  //Calibré horizontale
-        transform: translateX(-225%)
+//     100%{
+//         //transform: translateY(-157.5%)  //Calibré horizontale
+//         transform: translateX(-225%)
 
-    }
-}
+//     }
+// }

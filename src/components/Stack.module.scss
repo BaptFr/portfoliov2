@@ -1,4 +1,4 @@
-.sectionContainer {
+.stackSectionContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -8,17 +8,17 @@
     color: #ffffff;
 }
 
+
 h3 {
     display: flex;
     justify-content:center;
     align-items: center;
-    height: 100px;
+    height: 150px;
     line-height: 1em;
-
 }
 
 .techCardContainer {
-    height: 850px;
+    height: 700px;
 }
 
 .techContainer {
@@ -30,7 +30,6 @@ h3 {
     align-items: center;
     gap: 75px;
 }
-
 
 .techList{
     line-height: 4em;

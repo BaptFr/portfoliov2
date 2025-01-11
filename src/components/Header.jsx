@@ -6,7 +6,6 @@ function Header () {
     return (
         <header className={` d-flex flex-row flex-fill justify-content-sb background-blurred p-15 `}>
             <div className={styles.overlay}></div>
-            
             <img className='site-logo' src={ logo } alt='logo'></img>
             <nav className='d-flex flex-row '>
                 <ul className='d-flex flex-row '>
