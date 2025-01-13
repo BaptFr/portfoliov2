@@ -1,0 +1,42 @@
+[
+    {
+        "id":"1",
+        "title": "Cook Chef - EN COURS -       Voir le code sur GitHub -",
+        "image": "./src/assets/images/intro-image.webp",
+        "text": "Voici le projet 1 ffffffffffffffffffffffff ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff ",
+        "link": "www.test.lien",
+        "githublink": "www.test.lien"
+    },
+    {
+        "id":"2",
+        "title": "Mon vieu grimoire",
+        "image": "./src/assets/images/intro-image.webp",
+        "text":"Voici le projet 2 ffffffffffffffffffffffff ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff ",
+        "link": "www.test.lien",
+        "githublink": "www.test.lien"
+    },
+    {
+        "id":"3",
+        "title": "Kasa",
+        "image": "./src/assets/images/intro-image.webp",
+        "text":"Voici le projet 3 ",
+        "lien": "www.test.lien",
+        "githublink": "www.test.lien"
+    },
+    {
+        "id":"4",
+        "title": "Portfolio Sophie Bluel",
+        "image": "./src/assets/images/intro-image.webp",
+        "text":"Voici le projet 4 ",
+        "lien": "www.test.lien",
+        "githublink": "www.test.lien"
+    },
+    {
+        "id":"5",
+        "title": "Photographe Nina Carducci",
+        "image": "./src/assets/images/intro-image.webp",
+        "text":"Voici le projet 5 ",
+        "lien": "Voir le site avant optimisation : www.test.lien",
+        "githublink": "Voir le rapport d'optimisation"
+    }
+]

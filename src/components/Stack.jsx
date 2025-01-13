@@ -19,7 +19,7 @@ const sections = [
 ];
 
 const TechSection = () => {
-    const [techsData, setTechsData] = useState(null); // States
+    const [techsData, setTechsData] = useState(null);
     const [error, setError] = useState(null);
 
     useEffect(() => {
@@ -46,7 +46,7 @@ const TechSection = () => {
     return (
         <div className={styles.stackSectionContainer}>
             {sections.map(({ title, key }) => (
-                <div className={styles.techCardContainer} key={key}>
+                <div className={styles.techcardContainer} key={key}>
                     <h3>{title}</h3>
                     <div className={styles.techContainer}>
                         <div className='techBanner'>

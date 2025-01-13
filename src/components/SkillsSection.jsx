@@ -38,7 +38,7 @@ function SkillsSection () {
     return cards.length > 0 ? (
         <div className={`${styles.skillsSection} d-flex flex-row justify-content-sb wrap gap-50  `}>
             {cards.map((card) => (
-                <div key={card.id} className='CardContainer'>
+                <div key={card.id} className='cardContainer'>
                     <h3>{card.title}</h3>
                     <p className={styles.skillsTextContainer}> {card.text}</p>
                     <img src={card.image} alt={`sketch-${card.title}`}></img>

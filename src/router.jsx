@@ -2,8 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import { lazy } from "react";
 
-const Homepage= lazy (() => import('./pages/homepage/Homepage'));
-const Projetspage= lazy( () => import ('./pages/projetspage/Projetspage'));
+const Homepage = lazy(() => import('./pages/homepage/Homepage'));
+const Projectspage= lazy(() => import('./pages/projectspage/Projectspage'));
 
 export const router = createBrowserRouter([
     {
@@ -16,8 +16,8 @@ export const router = createBrowserRouter([
             },
             {
                 path:'projets',
-                element: <Projetspage />
-            },
+                element: <Projectspage />
+            }
         ]
     },
 ]);

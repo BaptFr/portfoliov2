@@ -34,7 +34,7 @@
 
 // Cards
 
-.CardContainer {
+.cardContainer {
   width: 45%;
   min-width: 300px;
   padding: 5px; 
@@ -54,6 +54,27 @@
   }
   p{
     font-size: 0.9em
+  }
+}
+
+.bigCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 25px;
+  h3 {
+    margin: 0;
+  }
+  p{
+    text-align: center;
+    width: 90%;
+    font-size: 1.3em;
+  }
+  img {
+    width: 200px;
+    height: auto;
   }
 }
 

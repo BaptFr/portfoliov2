@@ -5,7 +5,6 @@ h4 {
     margin: 0;
     text-align: center;
     word-wrap: break-word;
-    color: #ffffff;
     line-height: 1.2em;
 }
 
@@ -26,7 +25,7 @@ h4{
 }
 
 
-p{ color: #ffffff}
+
 * {
     box-sizing: border-box;
 }
@@ -40,7 +39,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Outfit';
     font-size: 19px;
-    color: #000000;
+    color: #ffffff;
 }
 
 .header-fixed{
@@ -54,6 +53,7 @@ body {
 p {
     font-size: 19px;
     font-weight: 500;
+    word-wrap: break-word;
 }
 
 .title-color{
