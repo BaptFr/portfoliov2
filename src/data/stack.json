@@ -51,70 +51,75 @@
     "devtools": [
         {
             "id": "11",
-            "name":"Postman",
+            "name":"Vite",
             "image":"./src/assets/logos/postman-logo.webp"
         },
         {
             "id": "12",
+            "name":"Postman",
+            "image":"./src/assets/logos/postman-logo.webp"
+        },
+        {
+            "id": "13",
             "name":"Git",
             "image":"./src/assets/logos/git-logo.webp"
         },
         {
-            "id": "13",
+            "id": "14",
             "name":"GitHub",
             "image":"./src/assets/logos/github-logo.webp"
         },  
         {
-            "id": "14",
+            "id": "15",
             "name":"Vercel",
             "image":"./src/assets/logos/vercel-logo.webp"
         }
     ],
     "seotools": [
         {
-            "id": "15",
+            "id": "16",
             "name":"Chrome DevTools",
             "image":"./src/assets/logos/devtools-logo.webp"
         },
         {
-            "id": "16",
+            "id": "17",
             "name":"Google Lightouse",
             "image":"./src/assets/logos/lighthouse-logo.webp"
         },
         {
-            "id": "17",
+            "id": "18",
             "name":"Schema.org",
             "image":"./src/assets/logos/schema-logo.webp"
         },
         {
-            "id": "18",
+            "id": "19",
             "name":"Wave ",
             "image":"./src/assets/logos/wave-logo.webp"
         }
     ],
     "collaborationtools": [
         {
-            "id": "19",
+            "id": "20",
             "name":"Figma",
             "image":"./src/assets/logos/figma-logo.webp"
         },
         {
-            "id": "20",
+            "id": "21",
             "name":"Notion",
             "image":"./src/assets/logos/notion-logo.webp"
         },
         {
-            "id": "21",
+            "id": "22",
             "name":"Trello",
             "image":"./src/assets/logos/trello-logo.webp"
         },
         {
-            "id": "22",
+            "id": "23",
             "name":"Slacks",
             "image":"./src/assets/logos/slacks-logo.webp"
         },
         {
-            "id": "23",
+            "id": "24",
             "name":"Feedly",
             "image":"./src/assets/logos/feedly-logo.webp"
         }

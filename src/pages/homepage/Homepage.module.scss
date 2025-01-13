@@ -3,10 +3,94 @@
     height: auto;
     margin-top: 75px
 }
-
 .feContainer{
     width: 40%;
 }
 .softSkillsContainer {
     margin: 100px 0px;
+    li {
+        width: 200px;
+        text-align: center;
+        border: 1px solid red;
+        border-radius: 10px;
+    }
+}
+#formationTitle {
+    margin-bottom: 5px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+.formationSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  min-height: 100vh;
+  padding: 100px 0;
+  font-family: Jost;
+}
+
+.design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  width: 90%;
+  height: auto;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.timelineContent {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #1f1f1f;
+  border-radius: 5px;
+  color: white;
+  padding: 1.75rem;
+  transition: 0.4s ease;
+  overflow-wrap: break-word;
+  margin: 1rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.timelineEmptyRight{
+    text-align: right;
+}
+
+.timelineComponent {
+  margin: 0px 10px 15px 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+  }
+  .timelineMiddle {
+    position: relative;
+    background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+    width: 3px;
+    height: 100%;
+  }
+  .maiMiddle {
+    opacity: 0;
+  }
+  .timelineCircle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
 }
