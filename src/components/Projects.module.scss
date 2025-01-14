@@ -1,8 +1,91 @@
 .ProjectsContainer {
-    
-
-}
+    padding: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
 
 .projectCard {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.03);
+    h3 {
+      font-weight: bold;
+      color: var(--primary);}
+  }
+  .cardOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+    h3 {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: white;
+      z-index: 2;
+      font-size: 1.5rem;
+    }
+  .cardTitle {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    font-size: 2.5rem;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  .modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
     width: 90%;
+    color: #000000;
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    a {
+      display: block;
+      margin: 10px 0;
+      font-weight: bold;
+      color: #000000;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        color: #0056b3;
+        cursor: pointer;
+      }
+    }
+  }
 }
