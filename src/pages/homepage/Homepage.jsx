@@ -17,7 +17,7 @@ function Homepage () {
                     de ma formation et de mes compétences.
                     </p>
                 </article>
-                <img src={introImage} alt='intro-portrait' className={styles.introImage} />
+                <img src={introImage} alt='intro-portrait' className='pageImage' />
             </section>
 
              TEST test TEST  STACK TECHNIQUE SECTION CONTAINER

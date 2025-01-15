@@ -22,6 +22,14 @@
   transition: all  0.2s;
 }
 
+.logoLink{
+  width: 500px;
+  height: 400px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
 .hover-effect-btn{
   &:hover {
     .btn,
@@ -32,8 +40,12 @@
   }
 }
 
-// Cards
+.pageImage {
+  width: 25%;
+  height: auto;
+}
 
+// Cards
 .cardContainer {
   width: 45%;
   min-width: 300px;
@@ -62,6 +74,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 100px;
   border: 1px solid white;
   border-radius: 25px;
   h3 {

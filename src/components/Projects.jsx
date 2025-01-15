@@ -17,44 +17,50 @@ const Projects = () => {
         })
         .then((data) => setProjectsData(data))
         .catch((error) => setError(error.message));
-    }, []);
+  }, []);
 
-    if (error) {
-    return <p>Error: {error}</p>;
-    }
-    if (!projectsData) {
-    return <p>Chargement des données...</p>;
-    }
+  if (error) {
+  return <p>Error: {error}</p>;
+  }
+  if (!projectsData) {
+  return <p>Chargement des données...</p>;
+  }
 
-    return (
+  return (
+    <div className={`${styles.projectsContainer} b1 d-flex flex-row all-center wrap p-20 gap-50`}>
+      {projectsData.map(({ id, title, image, tech }) => (
         <div
-          className={`${styles.ProjectsContainer} d-flex flex-row justify-content-center align-items-center wrap gap-50 b1`}
+          key={id}
+          className={`${styles.projectCard} bigCardContainer b2`}
+          style={{
+            backgroundImage: `url(${image})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: 'center left',
+          }}
+          onClick={() => setSelectedCard(id)} // Carte selectionnée
         >
-          {projectsData.map(({ id, title, image, }) => (
-            <div
-              key={id}
-              className={`${styles.projectCard} bigCardContainer b2`}
-              style={{
-                backgroundImage: `url(${image})`,
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: 'center left',
-              }}
-              onClick={() => setSelectedCard(id)} // Carte selectionnée
-            >
+          <div className={`${styles.cardOverlay}`}>
+          </div>
+          <h3 className={`${styles.cardTitle} b2`}>{title}</h3>
+          <div className={`${styles.cardTechsContainer} b3 d-flex flex-row all-center p-20 gap-40 wrap`}>
+            {tech && tech.map((tech, index)=> (
+              <div key= {index} className={`${styles.cardTechsLogosContainer}d d-flex flex-column all-center`}>
+                <img  src={tech.url} alt='tech-logo'></img>
+                <p>{tech.techname}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
 
-            <div className={`${styles.cardOverlay}`}></div>
-            <h3 className={`${styles.cardTitle}`}>{title}</h3>
-            </div>
-          ))}
-
-          {/* overlay*/}
-          {selectedCard !== null && (
+      {/* overlay*/}
+      {selectedCard !== null && (
         <div className={styles.modal} onClick={() => setSelectedCard(null)}>
           <div className={styles.modalContent}>
             {projectsData
               .filter((project) => project.id === selectedCard)
-              .map(({ title, text, links, imagemodal  }) => (
+              .map(({ title, links, imagemodal, purpose, techdescription }) => (
                 <div key={selectedCard}
                 style={{
                     backgroundImage: `url(${imagemodal})`,
@@ -63,7 +69,8 @@ const Projects = () => {
                     backgroundPosition: 'center left',
                   }}>
                   <h3>{title}</h3>
-                  <p>{text}</p>
+                  <p>{purpose}</p>
+                  <p> {techdescription}</p>
                   {links.map((link, index) => (
                     <a
                       key={index}

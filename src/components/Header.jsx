@@ -9,23 +9,24 @@ function Header () {
             <img className='site-logo' src={ logo } alt='logo'></img>
             <nav className='d-flex flex-row '>
                 <ul className='d-flex flex-row '>
-                    <NavLink to="/" end>
+                    <NavLink to='/' end>
                             <li  className='d-flex flex-row all-center mt-10 mb-10 mr-20 gap-10 hover-effect-btn active-effect'>
                                 <i className='fa-solid fa-user icons '></i>
                                 <button className='btn text-center'> Présentation</button>
                             </li>
                     </NavLink>
-                    <NavLink to="projets" end>
+                    <NavLink to='projets' end>
                         <li className='d-flex flex-row all-center mt-10 mb-10 mr-20 gap-10 hover-effect-btn active-effect'>
                             <i className='fa-solid fa-briefcase icons'></i>
                             <button className='btn  text-center'> Mes projets</button>
                         </li>
                     </NavLink>
-
+                    <NavLink to='contact' end>
                     <li className='d-flex flex-row all-center mt-10 mb-10 mr-20 gap-10 hover-effect-btn active-effect'>
                         <i className='fa-solid fa-envelope icons'></i>
                         <button className='btn text-center'> Me contacter</button>
                     </li>
+                    </NavLink>
                 </ul>
             </nav>
         </header>
