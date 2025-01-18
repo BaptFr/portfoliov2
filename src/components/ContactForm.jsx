@@ -98,8 +98,8 @@ const ContactForm = () => {
   return (
     <div className={styles.formContainer}>
       <form onSubmit={handleSubmit}>
-        <div className={styles.lineContainer}>
-          <label htmlFor="name">Nom</label>
+        <div className={styles.linesContainer}>
+          <label htmlFor="name">Votre nom</label>
           <input
             type="text"
             id="name"
@@ -114,7 +114,7 @@ const ContactForm = () => {
           />
           {errors.name && <p style={{ color: 'red' }}>{errors.name}</p>}
         </div>
-        <div className={styles.lineContainer}>
+        <div className={styles.linesContainer}>
           <label htmlFor="email">Email</label>
           <input
             type="email"
