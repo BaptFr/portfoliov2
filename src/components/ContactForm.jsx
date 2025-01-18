@@ -129,7 +129,7 @@ const ContactForm = () => {
           />
           {errors.email && <p style={{ color: 'red' }}>{errors.email}</p>}
         </div>
-        <div className={styles.lineContainer}>
+        <div className={styles.linesContainer}>
           <label htmlFor="message">Message</label>
           <textarea
             id="message"
@@ -148,8 +148,8 @@ const ContactForm = () => {
       </form>
       {status && <p>{status}</p>} {/* Affiche le message de statut */}
       {showModal && (
-        <div className={styles.modal}>
-          <div className={styles.modalContent}>
+        <div className={styles.contactModal}>
+          <div className={styles.contactModalContent}>
             <p>Votre message a été envoyé avec succès !</p>
             <button onClick={() => setShowModal(false)}>Fermer</button>
           </div>
