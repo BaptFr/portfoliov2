@@ -2,26 +2,7 @@
 .skillsSection {
   width : 100%;
 }
-.sCardContainer {
-    width: 50%;
-    min-width: 300px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    background-color: transparent;
-    border: 1px solid red;
-    img {
-      width: 200px;
-      height: auto;
-    }
-    p{
-      font-size: 0.9em
-    }
-  }
 
-  .skillsTextContainer {
-    width: 90%;
-  }
+.skillsTextContainer {
+  width: 90%;
+}

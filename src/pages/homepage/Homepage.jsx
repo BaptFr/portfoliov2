@@ -1,31 +1,28 @@
 import styles from './Homepage.module.scss';
 import introImage from '../../assets/images/intro-image.webp';
-import TechSection from '../../components/Stack';
+import StackSection from '../../components/StackSection';
 import SkillsSection from '../../components/SkillsSection';
 
 
 function Homepage () {
 
     return (
-        <div className= 'd-flex flex-fill flex-column p-40 front-content '>
+        <div className='d-flex flex-fill flex-column p-40 front-content'>
             <section className='section d-flex flex-row justify-content-sa align-items-center wrap'>
-                <article className='article border-style'>
-                    <h1> Bienvenue sur mon portfolio ! </h1>
-                    <p>Après une ancienne vie dans le commerce, j&apos; ai effectué une reconversion
-                    professionnelle pour me plonger dans le développement web. <br/>
-                    Explorez ici une sélection de projets qui témoignent de mon parcours,
+                <article className='article background-grey'>
+                    <h1 className={styles.title}> BIENVENUE SUR MON PORTFOLIO ! </h1>
+                    <p>Explorez ici mon parcours et une sélection de projets qui témoignent
                     de ma formation et de mes compétences.
                     </p>
                 </article>
                 <img src={introImage} alt='intro-portrait' className='pageImage' />
             </section>
 
-             TEST test TEST  STACK TECHNIQUE SECTION CONTAINER
 
             {/* SECTION STACK  section (code more robust) */}
-            <section>
+            <section className='section'>
                 <h2> STACK TECHNIQUE</h2>
-                <TechSection />
+                <StackSection />
             </section>
 
 
@@ -38,8 +35,8 @@ function Homepage () {
             {/* SOFTSKILLS section*/}
             <section className='section'>
             <h2>SOFT SKILLS</h2>
-            <div className={`${styles.softSkillsContainer} p-30 `}>
-                    <ul className='d-flex flex-row justify-content-sa wrap gap-10'>
+            <div className={`${styles.softSkillsContainer} p-30 background-multi`}>
+                    <ul className='d-flex flex-row justify-content-sa wrap gap-20'>
                         <li>ESPRIT D&apos; EQUIPE</li>
                         <li>AUTONOMIE</li>
                         <li>ADAPTABILITE</li>
@@ -52,7 +49,7 @@ function Homepage () {
 
 
             <h2 id={styles.formationTitle}>FORMATION</h2>
-            <section className={styles.formationSection}>
+            <section className={`${styles.formationSection} d-flex flex-column all-center`}>
                 <div className={styles.timeline}>
                     <div className={styles.timelineEmptyRight}>
                         <p>Décembre 2023</p>

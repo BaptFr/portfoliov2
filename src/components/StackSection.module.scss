@@ -4,35 +4,35 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 50px;
     color: #ffffff;
-}
-
-
-h3 {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    height: 150px;
-    line-height: 1em;
 }
 
 .techCardContainer {
     height: 700px;
 }
 
+.stackTitle {
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    h3{
+        line-height: 0.9em;
+    }
+
+}
+
 .techContainer {
-    width: 500px;
+    width: 550px;
     margin-top: 10px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 75px;
 }
 
-.techList{
-    line-height: 4em;
-    font-size:  1.2em;
-    text-align: center;
-}
+// .techList{
+//     line-height: 4em;
+//     font-size:  1.2em;
+//     text-align: center;
+// }

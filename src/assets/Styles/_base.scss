@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -5,6 +9,7 @@ h4 {
     margin: 0;
     text-align: center;
     word-wrap: break-word;
+    font-size: 2em;
     line-height: 1.2em;
 }
 
@@ -12,23 +17,32 @@ h2 {
     margin: 200px 0px 100px 0px;
     font-size: 4em ;
     font-weight: 500;
+    text-shadow: 2px 8px 5px #000000;
 }
+
 h3{
     width: 90%;
     margin: 20px;
     font-weight: 550;
     font-size: 2em;
+    background-image: linear-gradient(45deg,#ce6423, #eb3850, #5f1b86 );
+    -webkit-background-clip: text;
+    color: transparent;
 }
+
 h4{
     font-size: 25px;
+    text-shadow: 8px 5px 5px #000000;
 
 }
 
-
-
-* {
-    box-sizing: border-box;
+p {
+    font-size: 1.5em;
+    font-weight: 500;
+    word-wrap: break-word;
+    text-shadow: 8px 5px 5px #000000;
 }
+
 
 body {
     margin: 0;
@@ -50,11 +64,7 @@ body {
 
 }
 
-p {
-    font-size: 19px;
-    font-weight: 500;
-    word-wrap: break-word;
-}
+
 
 .title-color{
     font-size: 45px;
@@ -78,8 +88,11 @@ img {
 
 .background-image{
     //background-image: url('../images/backgroundtest1.jpg');
-    //background-size: cover;
-    background-color: #04091D;
+    background-size: cover;
+    //background-color: #04091D;
+    //background-image: linear-gradient(37deg, rgb(15,17,67),rgb(4,9,29));
+    background: linear-gradient(90deg, rgb(28, 28, 83) 0%, rgb(0, 0, 0) 100%);
+    //background: linear-gradient(90deg, rgba(13, 13, 36, 1) 0%, rgba(27, 27, 78, 1) 49%, rgba(13, 13, 36, 1) 100%);
  }
 
 // .background {

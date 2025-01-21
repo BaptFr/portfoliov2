@@ -6,12 +6,33 @@
     --blue2: #353c8d;
     --blue3: #21214b;
     --blue4: #171051;
-    --grey1: #858585;
-    --grey2: #3d3e42;
-    --gey3: #242424;
+    --grey1: #1F1F1F;
+    --grey2: #3d3e4283;
+    --grey3:  #3333333b;; //transparency
+    --grey4:  #0e0e2b69;
     --border-blue:#332d7c;
-    --box-shadow: 0 6px 9px 0 rgb(0 0 0 / 15%);
+    --box-shadow:  10px 8px 8px #000000;
+    --box-shadow-all:   1px 2px 2px 4px #000000;
+
     --box-shadow-nav: 0px 2px 18px 0px rgb(0 0 0 /20%);
     --linear-gradient: linear-gradient(to top, rgb(40, 40, 90), rgba(33, 33, 75, 0));
     --opacity8: 0.8;
+}
+
+
+.background-grey {
+    background-color: var(--grey3);
+    box-shadow:1px  8px 5px 5px #000000;
+}
+
+.background-gradient{
+    background: linear-gradient(90deg, rgba(13, 13, 36, 1) 0%, rgba(27, 27, 78, 1) 49%, rgba(13, 13, 36, 1) 100%);
+    //background: linear-gradient(90deg, rgba(13, 13, 36, 1) 0%, rgba(74, 74, 205, 1) 49%, rgba(13, 13, 36, 1) 100%);
+}
+.background-multi {
+    background-image: linear-gradient(45deg,#ce6423, #eb3850, #5f1b86 );
+}
+
+.box-shadow {
+    box-shadow: 2px 5px 5px #000000;
 }

@@ -4,6 +4,31 @@
     width: 100%;
 }
 
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.z-index-2 {
+    z-index: -2;
+}
+.z-index-1 {
+    z-index: -1;
+}
+.z-index1 {
+    z-index: 1;
+}
+.z-index2 {
+    z-index: 2;
+}
+
+.z-index3 {
+    z-index: 3;
+}
+
 // paddings & margins & gap
 .p-5 {
     padding: 5px;
@@ -22,6 +47,9 @@
 }
 .p-40 {
     padding: 40px;
+}
+.m-0 {
+    margin: 0;
 }
 .m-5 {
     margin: 5px;

@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import LogoBannerDyn from './LogoBannerDyn';
-import styles from './Stack.module.scss';
+import styles from './StackSection.module.scss';
 
 
 const sections = [
-    { title: 'Front-end', key: 'frontend' },
-    { title: 'Back-end', key: 'backend', dataKey: 'backend' },
+    { title: 'FRONT-END', key: 'frontend' },
+    { title: 'BACK-END', key: 'backend', dataKey: 'backend' },
     { title: (
-        <>Outils de développement <br /> et contrôle de version </>),
+        <>Outils de développement <br /> & contrôle de version</>),
         key: 'devtools', dataKey: 'devtools' },
     { title: (
         <>Outils de debug<br /> optimisation & SEO </>),
@@ -44,25 +44,27 @@ const TechSection = () => {
     };
 
     return (
-        <div className={styles.stackSectionContainer}>
+        <div className={`${styles.stackSectionContainer} gap-50`}>
             {sections.map(({ title, key }) => (
-                <div className={styles.techcardContainer} key={key}>
-                    <h3>{title}</h3>
-                    <div className={styles.techContainer}>
-                        <div className='techBanner'>
+                <div key={key} className={`${styles.techcardContainer} relative z-index1`} >
+                    <div className={`${styles.stackTitle} d-flex all-center m-0  p-20`}>
+                        <h3 >{title}</h3>
+                    </div>
+                    <div className= {`${styles.techContainer} mt-30`}>
+                        <div className='techBanner '>
                             <LogoBannerDyn
                                 jsonFile="./src/data/stack.json"
                                 sectionKey={key}
                             />
                         </div>
-                        <div>
-                            <ul>
-                                {techsData[key].map((tech) => (
-                                    <li className={styles.techList} key={tech.id}>{tech.name}</li>
-                                ))}
-                            </ul>
-                        </div>
                     </div>
+                    {/* <div>
+                        <ul>
+                            {techsData[key].map((tech) => (
+                                <li className={styles.techList} key={tech.id}>{tech.name}</li>
+                            ))}
+                        </ul>
+                    </div> */}
                 </div>
             ))}
         </div>

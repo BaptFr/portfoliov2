@@ -42,14 +42,23 @@ function LogosBannerDyn({ jsonFile, sectionKey, direction = "vertical" }) {
         <div className={styles.banner}>
             <div className={slideClass}>
                 {logos.map((logo) => (
+                  <div key={logo.id} className='d-flex flex-column all-center'>
                     <img key={logo.id} src={logo.image} alt={`logo ${logo.name}`} loading="lazy" />
+                    <p className='m-0'>{logo.name}</p>
+                  </div>
                 ))}
                 {logos.map((logo) => (
+                  <div key={logo.id} className='d-flex flex-column all-center'>
                     <img key={logo.id} src={logo.image} alt={`logo ${logo.name}`} loading="lazy" />
+                    <p className='m-0'>{logo.name}</p>
+                  </div>
                 ))}
                 {logos.map((logo) => (
+                  <div key={logo.id} className='d-flex flex-column all-center'>
                     <img key={logo.id} src={logo.image} alt={`logo ${logo.name}`} loading="lazy" />
-                ))}
+                    <p className='m-0'>{logo.name}</p>
+                  </div>
+                 ))}
             </div>
         </div>
         );

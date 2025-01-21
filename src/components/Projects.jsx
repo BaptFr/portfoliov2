@@ -27,11 +27,11 @@ const Projects = () => {
   }
 
   return (
-    <div className={`${styles.projectsContainer} b1 d-flex flex-row all-center wrap p-20 gap-50`}>
+    <div className={`${styles.allProjectsContainer} d-flex flex-row all-center wrap p-20 gap-50`}>
       {projectsData.map(({ id, title, image, tech }) => (
         <div
           key={id}
-          className={`${styles.projectCard} bigCardContainer b2`}
+          className={`${styles.projectCard} bigCardContainer`}
           style={{
             backgroundImage: `url(${image})`,
             backgroundSize: "cover",
@@ -42,10 +42,10 @@ const Projects = () => {
         >
           <div className={`${styles.cardOverlay}`}>
           </div>
-          <h3 className={`${styles.cardTitle} b2`}>{title}</h3>
-          <div className={`${styles.cardTechsContainer} b3 d-flex flex-row all-center p-20 gap-40 wrap`}>
+          <div className={`${styles.cardTechsBanner} d-flex flex-row all-center p-10 gap-20 wrap`}>
+            <h3 className={`${styles.cardTitle}`}>{title}</h3>
             {tech && tech.map((tech, index)=> (
-              <div key= {index} className={`${styles.cardTechsLogosContainer}d d-flex flex-column all-center`}>
+              <div key= {index} className={`${styles.techBannerLogosContainer}d d-flex flex-column`}>
                 <img  src={tech.url} alt='tech-logo'></img>
                 <p>{tech.techname}</p>
               </div>

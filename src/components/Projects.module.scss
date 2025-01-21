@@ -1,9 +1,9 @@
-.projectsContainer {
+
+.allProjectsContainer {
     padding: 50px 0px;
   }
 
-
-  //CARD
+//CARD by project
 .projectCard {
   position: relative;
   width: 500px;
@@ -22,50 +22,45 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
   }
+
+  //TECHS
+  .cardTechsBanner {
+    position: relative;
+    width: 110%;
+    height: 190px;
+    z-index: 1;
+    background-color: #0b0b22e7;
+    .techBannerLogosContainer{
+      width: 80px;
+      margin: 0;
+    }
+    img{
+      padding: 5px;
+      width: 70px;
+      height:70px;
+      background-color: #0b0b22;
+      border-radius: 10px;
+
+    }
+    p{
+      margin: 0;
+      font-size: 0.4em;
+    }
     h3 {
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
+      margin: 0;
       color: white;
-      z-index: 2;
-      font-size: 1.5rem;
+      text-shadow: 2px 2px 5px #000000;
       &:hover {
         background: rgba(0, 0, 0, 0);
         font-weight: bold;
       }
     }
-  .cardTitle {
-    position: relative;
-    z-index: 2;
-    margin: 0;
-    font-size: 2.5rem;
-  }
-
-  //TECHS
-  .cardTechsContainer {
-    position: relative;
-    width: 90%;
-    height: 120px;
-    z-index: 1;
-    .cardTechsLogosContainer{
-      width: 90%;
-      margin: 0;
-    }
-    img{
-      width: 75px;
-      height:70px;
-    }
-    p{
-      margin: 0;
-      font-size: 0.5em;
-    }
   }
 }
 
-
-
+//Modal after clickEvent
 .modal {
   position: fixed;
   top: 0;

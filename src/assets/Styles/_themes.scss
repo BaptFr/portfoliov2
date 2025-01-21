@@ -1,15 +1,19 @@
 .section {
   z-index: 1;
-  margin-top: 20px;
-  padding: 20px;
+  margin-top: 40px;
+  padding: 22px;
   font-family: 'Outfit';
   color: #ffffff;
 }
 
 .article {
   width: 50%;
+  padding:35px;
+  border-radius: 10px;
   text-align: center;
-  padding: 0px 35px;
+  p {
+    text-shadow: none;
+  }
 }
 
 .btn {
@@ -35,7 +39,6 @@
     .btn,
     .icons{
     cursor: pointer;
-    color: var(--grey1);
     }
   }
 }
@@ -55,17 +58,19 @@
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  background-color: transparent;
-  border: 1px solid red;
+
   h3 {
-    margin: 0;
+    padding:40px;
+
   }
   img {
     width: 200px;
     height: auto;
   }
   p{
-    font-size: 0.9em
+    text-align: center;
+    font-size: 1.3em;
+    text-shadow: none;
   }
 }
 
@@ -73,8 +78,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 100px;
+  justify-content: flex-start;
+  gap: 0px;
   border: 1px solid white;
   border-radius: 25px;
   h3 {
@@ -95,7 +100,6 @@
 
 
 
-
 // .small-card-overlay{
 //   position: absolute;
 //   top: 0;
@@ -111,13 +115,6 @@
 //   transition: opacity 0.3s ease;
 // }
 
-.border-style{
-  background-color: rgba(18, 7, 65, 0.2);
-  backdrop-filter: blur(4px);
-  border-radius: 20px;
-  border-top: 1px solid var(--grey1);
-  border-left: 1px solid var(--grey2);
-}
 
 .site-logo {
   max-width: 40px;
@@ -129,14 +126,14 @@
   color: #ffffff;
 }
 
-
-//Backgrounds
-
-.background-blurred{
-  background-color: rgba(18, 7, 65, 0.8);
-  backdrop-filter: blur(15px);
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1;
 }
-
-
-
-
