@@ -4,17 +4,20 @@ import StackSection from '../../components/StackSection';
 import SkillsSection from '../../components/SkillsSection';
 
 
+
+
 function Homepage () {
 
     return (
         <div className='d-flex flex-fill flex-column p-40 front-content'>
             <section className='section d-flex flex-row justify-content-sa align-items-center wrap'>
                 <article className='article background-grey'>
-                    <h1 className={styles.title}> BIENVENUE SUR MON PORTFOLIO ! </h1>
+                    <h1> BIENVENUE SUR MON PORTFOLIO ! </h1>
                     <p>Explorez ici mon parcours et une sélection de projets qui témoignent
                     de ma formation et de mes compétences.
                     </p>
                 </article>
+                
                 <img src={introImage} alt='intro-portrait' className='pageImage' />
             </section>
 
@@ -35,8 +38,8 @@ function Homepage () {
             {/* SOFTSKILLS section*/}
             <section className='section'>
             <h2>SOFT SKILLS</h2>
-            <div className={`${styles.softSkillsContainer} p-30 background-multi`}>
-                    <ul className='d-flex flex-row justify-content-sa wrap gap-20'>
+            <div className={`${styles.softSkillsContainer} p-30 background-grey`}>
+                    <ul className='d-flex flex-row justify-content-sa  wrap gap-20'>
                         <li>ESPRIT D&apos; EQUIPE</li>
                         <li>AUTONOMIE</li>
                         <li>ADAPTABILITE</li>

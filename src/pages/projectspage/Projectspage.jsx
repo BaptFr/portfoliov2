@@ -26,7 +26,7 @@ function Projectspage () {
                 <img src={GitHubLogo} alt='Github-repository'></img>
                 </a>
             </div>
-            <section>
+            <section className='test'>
                 <Projects />
             </section>
         </div>

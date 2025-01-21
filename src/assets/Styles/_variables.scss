@@ -11,10 +11,11 @@
     --grey3:  #3333333b;; //transparency
     --grey4:  #0e0e2b69;
     --border-blue:#332d7c;
-    --box-shadow:  10px 8px 8px #000000;
+    --box-shadow:  8px 5px 5px #000000;
     --box-shadow-all:   1px 2px 2px 4px #000000;
-
     --box-shadow-nav: 0px 2px 18px 0px rgb(0 0 0 /20%);
+    --text-shadow-b: 2px 5px 6px #000000;
+    --text-shadow-r: 3px 2px 3px #000000;
     --linear-gradient: linear-gradient(to top, rgb(40, 40, 90), rgba(33, 33, 75, 0));
     --opacity8: 0.8;
 }
@@ -22,7 +23,6 @@
 
 .background-grey {
     background-color: var(--grey3);
-    box-shadow:1px  8px 5px 5px #000000;
 }
 
 .background-gradient{
