@@ -40,8 +40,8 @@ function SkillsSection () {
             {cards.map((card) => (
                 <div key={card.id} className='cardContainer background-grey box-shadow'>
                     <h3>{card.title}</h3>
-                    <p className={styles.skillsTextContainer}> {card.text}</p>
                     <img src={card.image} alt={`sketch-${card.title}`}></img>
+                    <p className={styles.skillsTextContainer}> {card.text}</p>
                 </div >
         ))}
         </div>
