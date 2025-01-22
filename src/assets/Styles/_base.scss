@@ -35,7 +35,7 @@ h3{
 
 h4{
     font-size: 25px;
-    text-shadow: 8px 5px 5px #000000;
+    text-shadow: var(--text-shadow);
 
 }
 
@@ -46,7 +46,6 @@ p {
     word-wrap: break-word;
     color: var(--grey1);
 }
-
 
 body {
     margin: 0;

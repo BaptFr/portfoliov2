@@ -1,21 +1,23 @@
 :root {
     --primary: #030205;
-    --secondary: #0f0e11;
-    --third: #19193a;//
+    --secondary: #0f0e11ad;
+    --third: #0d0d0e75;
+    --variant-secondary: linear-gradient(to top, #0f0e11, #000000);; 
     --blue1: rgb(85, 164, 255); //border trsnp
     --blue2: rgb(108, 177, 255);
     --purple1: #793ed8;
-    --blue4: #171051;//
     --blue-transparency-clear: rgba(59, 131, 246, 0.205);
     --blue-transparency-dark:rgba(75,69,255,0.4);
-    --grey1: #e2e2e2;//
+    --grey1: #e2e2e2;
     --grey2: #a7a7a7;//
     --grey3:   #1313139f;; //ok transparency
-    --grey4:  #0e0e2b69;//
+    --orange1: #ff721b;
     --border-blue:#332d7c;
+    --box-shadow: box-shadow: 2px 5px 5px #000000;
     --box-shadow-purple: 2px 3px 18px 8px #381C66;
     --box-shadow-orange: 2px 3px 18px 1px  #ff721b;
-    --box-shadow-blue: 0px 2px 18px 5px rgba(59, 131, 246, 0.712);;
+    --box-shadow-blue: 0px 2px 18px 5px rgba(59, 131, 246, 0.712);
+    --text-shadow: 2px 5px 2px #000000;
     --text-shadow-blue: 0px 2px 5px 5px rgb(105, 175, 255);
     --linear-gradient: linear-gradient(to top, rgb(40, 40, 90), rgba(33, 33, 75, 0));
     --opacity8: 0.8;

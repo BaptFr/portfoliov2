@@ -8,18 +8,14 @@
     color: #ffffff;
 }
 
-.stackContainer {
-    box-shadow: var(--box-shadow-purple);
-    background-color: var(--secondary);
-    border: 1px solid var(--purple1);
-}
+
 
 .stackTitle {
     height: 120px;
     width: 90%;
     border-radius: 20px 20px 0px 0px;
     border-bottom: 1px solid var(--purple1);
-   color: var(--purple1);
+    text-shadow: var(--text-shadow);
     h3{
         font-size: 1.3em;
         line-height: 1.1em;

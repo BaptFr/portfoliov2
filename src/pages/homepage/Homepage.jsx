@@ -2,7 +2,10 @@ import styles from './Homepage.module.scss';
 import introImage from '../../assets/images/intro-image.webp';
 import StackSection from '../../components/StackSection';
 import SkillsSection from '../../components/SkillsSection';
-import Blur from '../../assets/images/blur1.png'
+import Blur from '../../assets/images/blur1.png';
+import EducationLogo from '../../assets/logos/education-logo.webp';
+import WorkLogo from '../../assets/logos/work-logo.webp';
+
 
 function Homepage () {
 
@@ -21,7 +24,7 @@ function Homepage () {
 
 
             {/* SECTION STACK  section (code more robust) */}
-            <section className='section'>
+            <section className='section '>
                 <h2> STACK TECHNIQUE</h2>
                 <StackSection />
             </section>
@@ -49,22 +52,26 @@ function Homepage () {
 
 
 
-            <h2 id={styles.formationTitle}>FORMATION <br /> & <br />EXPERIENCE <br />PROFESSIONNELLE</h2>
-            <section className={`${styles.formationSection} d-flex flex-column all-center`}>
-                <div className={styles.timeline}>
-                 <div className={styles.timelineCircle}></div>
-                     <div className={styles.timelineEmptyRight}>
+            <h2 id={styles.formationTitle}>FORMATION <br /> & <br />EXPERIENCE PROFESSIONNELLE</h2>
+            <section className={`${styles.formationSection} d-flex flex-column all-center gap-100`}>
+                <div className={`${styles.formationLogosLegend} d-flex flex-row  gap-400 `}>
+                    <img className='orange-model' src={EducationLogo} alt='education-logo'/>
+                    <img className='purple-model' src={WorkLogo} alt='work-logo'/>
+                </div>
+                <div className={`${styles.timeline}`}>
+                    <div className={styles.timelineCircle}></div>
+                    <div className={styles.timelineEmptyRight}>
                         <p>Depuis Déc. 2024</p>
                         <p></p>
                     </div>
                     <div className={styles.timelineMiddle}>
                         <div className={styles.timelineCircle}></div>
-                    </div> <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentR}`}>
+                    </div> <div className={`${styles.timelineComponent} ${styles.timelineContent} purple-model`}>
                         <h4>Developpeur Front-End React Bénévole</h4>
                         <p>Association Their Memory</p>
                     </div>
                     <div className={styles.timelineCircle}></div>
-                     <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentL}`}>
+                     <div className={`${styles.timelineComponent} ${styles.timelineContent} orange-model`}>
                         <h4>Meta Front-End Developer- Professional Certificate</h4>
                         <p>Meta 9 courses program</p>
                     </div>
@@ -74,7 +81,7 @@ function Homepage () {
                     <div className={styles.timelineEmpty}>
                         <p>Obtention Déc. 2024</p>
                     </div>
-                    <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentL}`}>
+                    <div className={`${styles.timelineComponent} ${styles.timelineContent} orange-model`}>
                             <h4>Certification Professionnelle de Développeur web</h4>
                             <p>Open ClassRooms</p>
                     </div>
@@ -83,7 +90,7 @@ function Homepage () {
                     </div>
                     <div className={styles.timelineEmpty}>
                     <p>Obtention Juil. 2024</p>
- 
+
                     </div>
                     <div className={styles.timelineEmptyRight}>
                     <p>Sept. 2023</p>
@@ -93,11 +100,11 @@ function Homepage () {
                         <div className={styles.timelineCircle}></div>
                     </div>
 
-                    <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentR}`}>
+                    <div className={`${styles.timelineComponent} ${styles.timelineContent} purple-model`}>
                         <h4> Manager métier <br/></h4>
                         <p>Employé < br/> puis cadre commercial < br/> -< br/> Hypermarchés CARREFOUR </p>
                     </div>
-                    <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentL}`}>
+                    <div className={`${styles.timelineComponent} ${styles.timelineContent} orange-model`}>
                         <h4>Titre Professionnnel de Manager < br/>  d&apos; Univers Marchand</h4>
                         <p>RNCP - Niveau 5 (BAC +2)</p>
                     </div>
@@ -113,21 +120,21 @@ function Homepage () {
                     <div className={styles.timelineMiddle}>
                         <div className={styles.timelineCircle}></div>
                     </div>
-                    <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentR}`}>
+                    <div className={`${styles.timelineComponent} ${styles.timelineContent} purple-model`}>
                         <h4>Militaire </h4>
                         <p>Armée de Terre</p>
                     </div>
-
-                    <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentL}`}>
+                    <div className={`${styles.timelineComponent} ${styles.timelineContent} orange-model`}>
                         <h4>Ecole Nationale des Sous-Officier d&apos; Active </h4>
                         <p>Armée de Terre</p>
                     </div>
+
                     <div className={styles.timelineMiddle}>
                         <div className={styles.timelineCircle}></div>
                     </div>
                     <div className={styles.timelineEmpty}>
                     </div>
-                    <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentL}`}>
+                    <div className={`${styles.timelineComponent} ${styles.timelineContent} orange-model`}>
                         <h4>Baccalauréat </h4>
                         <p>Série Scientifique</p>
                     </div>
@@ -143,8 +150,3 @@ function Homepage () {
     )
 };
 export default Homepage;
-
-{/* <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentL}`}>
-                            <h4>Ecole Nationale des Sous-Officers d&apos; Active</h4>
-                            <p>Armée de Terre</p>
-                    </div> */}

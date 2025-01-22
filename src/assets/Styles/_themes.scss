@@ -52,29 +52,33 @@
 
 // Cards
 .cardContainer {
-  width: 31%;
-  height: 550px;
+  width: 25%;
+  height: 700px;
   min-width: 250px;
   padding: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border-radius: 20px;
-  border: 1px solid var(--blue1);
-  box-shadow:var(--box-shadow-blue);
+  transition: all 0.2s ease;
+  &:hover{
+    transform: scale(1.005);
+    box-shadow: 0px 2px 18px 5px rgb(59, 131, 246);
+  }
   h3 {
-    font-size: 2em;
-    font-weight: 450;
-    color: var(--blue2);
+    font-size: 1.5em;
+    font-weight: 4500;
+    text-shadow: var(--text-shadow)
   }
   img {
-    width: 75px;
+    width: 150px;
     height: auto;
   }
   p{
+    width: 80%;
     text-align: center;
     text-shadow: none;
+    font-size: 1em;
   }
 }
 
@@ -100,7 +104,26 @@
   }
 }
 
-//image & blur 
+//backgrounds
+.blue-model{
+  background-color: var(--secondary);
+  box-shadow: var(--box-shadow-blue);
+  border: 1px solid var(--blue2);
+  border-radius: 15px;
+}
+.purple-model{
+  box-shadow: var(--box-shadow-purple);
+  border: 1px solid var(--purple1);
+  background-color: var(--secondary);
+  border-radius: 15px;
+}
+.orange-model{
+  background-color: var(--secondary);
+  box-shadow: var(--box-shadow-orange);
+  border: 1px solid var(--orange1);
+  border-radius: 15px;
+}
+//image & blur
 .background-image-blur{
   width: 100%;
   height: auto;

@@ -21,7 +21,7 @@
     background: linear-gradient(45deg, #ff721b, #fa3952, #791ab1);
     font-size: 1.3em;
     font-weight: 600;
-    text-shadow: var(--text-shadow-r);
+    text-shadow: var(--text-shadow);
     box-shadow: var(--box-shadow);
   }
 }
@@ -36,6 +36,9 @@
   min-height: 100vh;
   padding: 100px 0;
 }
+
+
+
 
 .design {
   display: flex;
@@ -56,11 +59,9 @@
   padding: 1.75rem;
   margin: 1rem;
   margin-bottom: 20px;
-  border-radius: 5px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: #1f1f1f;
   color: white;
   transition: 0.4s ease;
   overflow-wrap: break-word;
@@ -68,9 +69,11 @@
 }
 .timelineContentR{
   box-shadow: var(--box-shadow-purple);
+  border: 1px solid var(--purple1);
 }
 .timelineContentL{
   box-shadow: var(--box-shadow-orange);
+  border: 1px solid var(--orange1);
 }
 
 .timelineEmpty{
