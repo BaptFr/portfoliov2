@@ -36,7 +36,7 @@ function SkillsSection () {
     if (error) return <p>Erreur : {error}</p>;
 
     return cards.length > 0 ? (
-        <div className={`${styles.skillsSection} d-flex flex-row center wrap gap-50  `}>
+        <div className={`${styles.skillsSection} d-flex flex-row all-center wrap gap-50  `}>
             {cards.map((card) => (
                 <div key={card.id} className='cardContainer background-grey box-shadow'>
                     <h3>{card.title}</h3>

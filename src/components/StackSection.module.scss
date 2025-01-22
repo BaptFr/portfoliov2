@@ -4,31 +4,32 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 30px;
     color: #ffffff;
 }
 
-.techCardContainer {
-    height: 700px;
+.stackContainer {
+    box-shadow: var(--box-shadow-blue);
 }
 
 .stackTitle {
-    height: 200px;
-    border-radius: 15px 15px 0px 0px;
-    border: 1px solid black;
+    height: 120px;
+    border-radius: 20px 20px 0px 0px;
+    color: var(--blue2);
     h3{
-        line-height: 0.9em;
+        font-size: 1.3em;
+        line-height: 1.1em;
     }
 
 }
 
 .techContainer {
-    width: 550px;
+    width: 300px;
     margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 75px;
-    border: 1px solid black;
+
 }
 

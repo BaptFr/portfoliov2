@@ -10,36 +10,18 @@
     mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
 }
 
-.logos {
-    width: 10%;
-    position: relative;
-    margin-top: 0px;
-    opacity: 0.9;
-}
-
 .slideY {
     margin: 0;
     display: flex;
     flex-direction: column;
     gap: 100px;
     flex-wrap: nowrap;
-    animation: slideY 25s linear infinite;
-    //animation: slide 16s linear infinite; //Calibré horizontale
+    animation: slideY 30s linear infinite;
 }
 
-// .slideX {
-//     margin: 0;
-//     display: flex;
-//     flex-direction: row;
-//     gap: 150px;
-//     flex-wrap: nowrap;
-//     animation: slideX 10s linear infinite;
-//     //animation: slide 16s linear infinite; //Calibré horizontale
-// }
-
 img{
-    width: 100px;
-    height: 90px;
+    width: 75px;
+    height: 70px;
     flex-shrink: 0;
 }
 
@@ -47,22 +29,9 @@ img{
     0% {
         transform: translateY(0%)
     }
-
     100%{
-        //transform: translateY(-157.5%)  //Calibré horizontale
-        transform: translateY(-69%)
+      transform: translateY(-69%)
 
     }
 }
 
-// @keyframes slideX{
-//     0% {
-//         transform: translateX(0%)
-//     }
-
-//     100%{
-//         //transform: translateY(-157.5%)  //Calibré horizontale
-//         transform: translateX(-225%)
-
-//     }
-// }

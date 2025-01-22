@@ -1,10 +1,12 @@
 header{
     position: relative;
     z-index:2;
-}
-
-nav{
-    z-index:2;
+    width: 90%;
+    margin: auto;
+    background: var(--blue-transparency-clear);
+    border-radius: 0px 0px 30px 30px;
+    border: 1px solid var(--blue1);
+    overflow: hidden;
 }
 
 
@@ -13,7 +15,3 @@ a{
     text-decoration: none;
 }
 
-p a.active {
-    color: red;
-    filter: brightness(50%);
-}

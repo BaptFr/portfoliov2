@@ -2,22 +2,20 @@ import styles from './Homepage.module.scss';
 import introImage from '../../assets/images/intro-image.webp';
 import StackSection from '../../components/StackSection';
 import SkillsSection from '../../components/SkillsSection';
-
-
-
+import Blur from '../../assets/images/blur1.png'
 
 function Homepage () {
 
     return (
-        <div className='d-flex flex-fill flex-column p-40 front-content'>
-            <section className='section d-flex flex-row justify-content-sa align-items-center wrap'>
-                <article className='article background-grey'>
+        <div className='d-flex flex-fill flex-column'>
+            <section className={`${styles.introSection} section relative d-flex flex-row justify-content-sb align-items-center wrap`}>
+                <img src={Blur} className='background-image-blur absolute'/>
+                <article className='article'>
                     <h1> BIENVENUE SUR MON PORTFOLIO ! </h1>
                     <p>Explorez ici mon parcours et une sélection de projets qui témoignent
                     de ma formation et de mes compétences.
                     </p>
                 </article>
-                
                 <img src={introImage} alt='intro-portrait' className='pageImage' />
             </section>
 
@@ -31,15 +29,15 @@ function Homepage () {
 
             {/* COMPETENCES section */}
             <section className='section'>
-            <h2>METHODES <br /> ET <br />COMPETENCES</h2>
+            <h2>METHODES <br /> & <br />COMPETENCES</h2>
                 <SkillsSection />
             </section >
 
             {/* SOFTSKILLS section*/}
             <section className='section'>
             <h2>SOFT SKILLS</h2>
-            <div className={`${styles.softSkillsContainer} p-30 background-grey`}>
-                    <ul className='d-flex flex-row justify-content-sa  wrap gap-20'>
+            <div className={`${styles.softSkillsContainer} p-30`}>
+                    <ul className='d-flex flex-row justify-content-sa wrap gap-20'>
                         <li>ESPRIT D&apos; EQUIPE</li>
                         <li>AUTONOMIE</li>
                         <li>ADAPTABILITE</li>
@@ -51,42 +49,87 @@ function Homepage () {
 
 
 
-            <h2 id={styles.formationTitle}>FORMATION</h2>
+            <h2 id={styles.formationTitle}>FORMATION <br /> & <br />EXPERIENCE <br />PROFESSIONNELLE</h2>
             <section className={`${styles.formationSection} d-flex flex-column all-center`}>
                 <div className={styles.timeline}>
-                    <div className={styles.timelineEmptyRight}>
-                        <p>Décembre 2023</p>
+                 <div className={styles.timelineCircle}></div>
+                     <div className={styles.timelineEmptyRight}>
+                        <p>Depuis Déc. 2024</p>
+                        <p></p>
                     </div>
                     <div className={styles.timelineMiddle}>
                         <div className={styles.timelineCircle}></div>
+                    </div> <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentR}`}>
+                        <h4>Developpeur Front-End React Bénévole</h4>
+                        <p>Association Their Memory</p>
                     </div>
-                    <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentL}`}>
+                    <div className={styles.timelineCircle}></div>
+                     <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentL}`}>
                         <h4>Meta Front-End Developer- Professional Certificate</h4>
                         <p>Meta 9 courses program</p>
-                    </div>
-                    <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentR}`}>
-                            <h4>Certification Professionnelle de Développeur web</h4>
-                            <p>Open Classrooms</p>
                     </div>
                     <div className={styles.timelineMiddle}>
                         <div className={styles.timelineCircle}></div>
                     </div>
                     <div className={styles.timelineEmpty}>
-                    <p>Juillet 2023</p>
+                        <p>Obtention Déc. 2024</p>
                     </div>
-                    <div className={styles.timelineEmptyRight}>
-                    <p>2015</p>
+                    <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentL}`}>
+                            <h4>Certification Professionnelle de Développeur web</h4>
+                            <p>Open ClassRooms</p>
                     </div>
                     <div className={styles.timelineMiddle}>
                         <div className={styles.timelineCircle}></div>
                     </div>
-                    <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentL}}`}>
+                    <div className={styles.timelineEmpty}>
+                    <p>Obtention Juil. 2024</p>
+ 
+                    </div>
+                    <div className={styles.timelineEmptyRight}>
+                    <p>Sept. 2023</p>
+                    <p>Sept. 2015</p>
+                    </div>
+                    <div className={styles.timelineMiddle}>
+                        <div className={styles.timelineCircle}></div>
+                    </div>
+
+                    <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentR}`}>
+                        <h4> Manager métier <br/></h4>
+                        <p>Employé < br/> puis cadre commercial < br/> -< br/> Hypermarchés CARREFOUR </p>
+                    </div>
+                    <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentL}`}>
                         <h4>Titre Professionnnel de Manager < br/>  d&apos; Univers Marchand</h4>
                         <p>RNCP - Niveau 5 (BAC +2)</p>
                     </div>
+                    <div className={styles.timelineMiddle}>
+                        <div className={styles.timelineCircle}></div>
+                    </div>
+                    <div className={styles.timelineEmpty}>
+                    <p></p>
+                    <p>2014</p>
+                    </div>
+                    <div className={styles.timelineEmpty}>
+                    </div>
+                    <div className={styles.timelineMiddle}>
+                        <div className={styles.timelineCircle}></div>
+                    </div>
                     <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentR}`}>
-                            <h4>Ecole Nationale des Sous-Officers d&apos; Active</h4>
-                            <p>Armée de Terre</p>
+                        <h4>Militaire </h4>
+                        <p>Armée de Terre</p>
+                    </div>
+
+                    <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentL}`}>
+                        <h4>Ecole Nationale des Sous-Officier d&apos; Active </h4>
+                        <p>Armée de Terre</p>
+                    </div>
+                    <div className={styles.timelineMiddle}>
+                        <div className={styles.timelineCircle}></div>
+                    </div>
+                    <div className={styles.timelineEmpty}>
+                    </div>
+                    <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentL}`}>
+                        <h4>Baccalauréat </h4>
+                        <p>Série Scientifique</p>
                     </div>
                     <div className={styles.timelineMiddle}>
                         <div className={styles.timelineCircle}></div>
@@ -94,19 +137,14 @@ function Homepage () {
                     <div className={styles.timelineEmpty}>
                     <p>2009</p>
                     </div>
-                    <div className={styles.timelineEmptyRight}>
-                    <p>2007</p>
-                    </div>
-                    <div className={styles.timelineMiddle}>
-                        <div className={styles.timelineCircle}></div>
-                    </div>
-                    <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentL}`}>
-                        <h4>Baccalauréat </h4>
-                        <p>Série Scientifique</p>
-                    </div>
-                </div>
+            </div>
             </section>
         </div>
     )
 };
 export default Homepage;
+
+{/* <div className={`${styles.timelineComponent} ${styles.timelineContent} ${styles.timelineContentL}`}>
+                            <h4>Ecole Nationale des Sous-Officers d&apos; Active</h4>
+                            <p>Armée de Terre</p>
+                    </div> */}

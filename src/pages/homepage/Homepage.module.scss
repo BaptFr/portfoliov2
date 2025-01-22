@@ -1,13 +1,15 @@
 
-.feContainer{
-    width: 40%;
-}
 
+.introSection {
+
+
+}
 
 .softSkillsContainer {
   padding: 0px 100px;
   margin: 100px -100px;
-  box-shadow: var(--box-shadow);
+  background-color: var(--grey3);
+  box-shadow: var(--box-shadow-orange);
   li {
     width: 250px;
     height: 60px;
@@ -24,7 +26,7 @@
   }
 }
 
-//FORMATIONS STYLES
+//FORMATIONS & EXP STYLES
 #formationTitle {
     margin-bottom: 5px;
 }
@@ -60,17 +62,35 @@
   text-align: center;
   background: #1f1f1f;
   color: white;
-  box-shadow: var(--box-shadow);
   transition: 0.4s ease;
   overflow-wrap: break-word;
+  p {line-height: 1.1em;}
 }
+.timelineContentR{
+  box-shadow: var(--box-shadow-purple);
+}
+.timelineContentL{
+  box-shadow: var(--box-shadow-orange);
+}
+
 .timelineEmpty{
-    margin-left: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;p{
+    margin: 0;
+  }
 }
 
 .timelineEmptyRight{
-    margin-right: 10px;
-    text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+  margin-right: 5px;
+    p{
+      margin: 0;
+    }
 }
 
 .timelineComponent {

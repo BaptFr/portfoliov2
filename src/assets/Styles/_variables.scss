@@ -1,28 +1,24 @@
 :root {
-    --primary: #000025;
-    --secondary: #10003b;
-    --third: #19193a;
-    --blue1: #6c7af7;
-    --blue2: #353c8d;
-    --blue3: #21214b;
-    --blue4: #171051;
-    --grey1: #1F1F1F;
-    --grey2: #3d3e4283;
-    --grey3:  #3333333b;; //transparency
-    --grey4:  #0e0e2b69;
+    --primary: #030205;
+    --secondary: #0f0e11;
+    --third: #19193a;//
+    --blue1: rgba(85,164,255,0.5);
+    --blue2: rgb(108, 177, 255);//
+    --purple1: #793ed8;//
+    --blue4: #171051;//
+    --blue-transparency-clear: rgba(59, 131, 246, 0.205);
+    --blue-transparency-dark:rgba(75,69,255,0.4);
+    --grey1: #1F1F1F;//
+    --grey2: #3d3e4283;//
+    --grey3:   #1313139f;; //ok transparency
+    --grey4:  #0e0e2b69;//
     --border-blue:#332d7c;
-    --box-shadow:  8px 5px 5px #000000;
-    --box-shadow-all:   1px 2px 2px 4px #000000;
-    --box-shadow-nav: 0px 2px 18px 0px rgb(0 0 0 /20%);
-    --text-shadow-b: 2px 5px 6px #000000;
-    --text-shadow-r: 3px 2px 3px #000000;
+    --box-shadow-purple: 2px 3px 18px 1px #381C66;
+    --box-shadow-orange: 2px 3px 18px 1px  #ff721b;
+    --box-shadow-blue: 0px 2px 18px 5px rgba(59, 131, 246, 0.712);;
+    --text-shadow-blue: 0px 2px 5px 5px rgb(105, 175, 255);
     --linear-gradient: linear-gradient(to top, rgb(40, 40, 90), rgba(33, 33, 75, 0));
     --opacity8: 0.8;
-}
-
-
-.background-grey {
-    background-color: var(--grey3);
 }
 
 .background-gradient{

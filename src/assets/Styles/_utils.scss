@@ -29,6 +29,9 @@
     z-index: 3;
 }
 
+.width-100{
+    width: 100%;
+}
 // paddings & margins & gap
 .p-5 {
     padding: 5px;
@@ -132,6 +135,17 @@
     bottom: 0;
 }
 
+//borders
+
+.br-10 {
+    border-radius: 10px;
+}
+.br-20{
+    border-radius: 20px;
+}
+.br-30 {
+    border-radius: 30px;
+}
 
 //text utils
 .text-center {

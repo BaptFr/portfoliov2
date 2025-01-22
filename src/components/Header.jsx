@@ -7,7 +7,7 @@ function Header () {
         <header className={` d-flex flex-row flex-fill justify-content-sb p-15 `}>
             <div className='overlay'></div>
             <img className='site-logo z-index1' src={ logo } alt='logo'></img>
-            <nav className='d-flex flex-row '>
+            <nav className='d-flex flex-row z-index2'>
                 <ul className='d-flex flex-row '>
                     <NavLink to='/' end>
                             <li  className='d-flex flex-row all-center mt-10 mb-10 mr-20 gap-10 hover-effect-btn active-effect'>
