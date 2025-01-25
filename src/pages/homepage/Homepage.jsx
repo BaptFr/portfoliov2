@@ -2,7 +2,6 @@ import styles from './Homepage.module.scss';
 import introImage from '../../assets/images/intro-image.webp';
 import StackSection from '../../components/StackSection';
 import SkillsSection from '../../components/SkillsSection';
-import Blur from '../../assets/images/blur1.png';
 import EducationLogo from '../../assets/logos/education-logo.webp';
 import WorkLogo from '../../assets/logos/work-logo.webp';
 
@@ -11,8 +10,7 @@ function Homepage () {
 
     return (
         <div className='d-flex flex-fill flex-column'>
-            <section className={`${styles.introSection} section relative d-flex flex-row justify-content-sb align-items-center wrap`}>
-                <img src={Blur} className='background-image-blur absolute'/>
+            <section className={`${styles.introSection} section d-flex flex-row justify-content-sb align-items-center wrap`}>
                 <article className='article'>
                     <h1> BIENVENUE SUR MON PORTFOLIO ! </h1>
                     <p>Explorez ici mon parcours et une sélection de projets qui témoignent

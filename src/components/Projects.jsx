@@ -31,7 +31,7 @@ const Projects = () => {
       {projectsData.map(({ id, title, image, tech }) => (
         <div
           key={id}
-          className={`${styles.projectCard} bigCardContainer`}
+          className={`${styles.projectCard} big-card-container purple-model`}
           style={{
             backgroundImage: `url(${image})`,
             backgroundSize: "cover",
@@ -57,17 +57,15 @@ const Projects = () => {
       {/* overlay*/}
       {selectedCard !== null && (
         <div className={styles.modal} onClick={() => setSelectedCard(null)}>
-          <div className={styles.modalContent}>
+          <div className={`${styles.modalContent} purple-model-modal`}>
             {projectsData
               .filter((project) => project.id === selectedCard)
               .map(({ title, links, imagemodal, purpose, techdescription }) => (
                 <div key={selectedCard}
-                style={{
-                    backgroundImage: `url(${imagemodal})`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: 'center left',
-                  }}>
+                  style={{
+
+                  }}
+                >
                   <h3>{title}</h3>
                   <p>{purpose}</p>
                   <p> {techdescription}</p>
