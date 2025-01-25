@@ -43,7 +43,7 @@ const Projects = () => {
           <div className={`${styles.cardOverlay}`}>
           </div>
           <div className={`${styles.cardTechsBanner} d-flex flex-row all-center p-10 gap-20 wrap`}>
-            <h3 className={`${styles.cardTitle}`}>{title}</h3>
+            <h3 className={`${styles.cardTitle} `}>{title}</h3>
             {tech && tech.map((tech, index)=> (
               <div key= {index} className={`${styles.techBannerLogosContainer}d d-flex flex-column`}>
                 <img  src={tech.url} alt='tech-logo'></img>
@@ -66,7 +66,7 @@ const Projects = () => {
 
                   }}
                 >
-                  <h3>{title}</h3>
+                  <h3 className='gradient-title-purple'>{title}</h3>
                   <p>{purpose}</p>
                   <p> {techdescription}</p>
                   {links.map((link, index) => (

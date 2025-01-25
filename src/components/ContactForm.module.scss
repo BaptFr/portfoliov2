@@ -1,9 +1,4 @@
-.formContainer {
-    width: 100%;
-    gap: 50px;
-    margin: 0 auto;
-    font-weight: 400;
-}
+
 .linesContainer {
     display: flex;
     flex-direction: column;
@@ -28,16 +23,13 @@ textarea {
 
 form button {
     margin-top: 50px;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
     &:hover {
-        background-color: #45a049;
+        background-color: var(--blue-transparency-dark);
+        border: 2px solid var(--blue-transparency-dark);
+    }
+    &:active {
+        transform: scale(0.9);
+        background-color: rgb(61, 168, 255);
     }
 }
 

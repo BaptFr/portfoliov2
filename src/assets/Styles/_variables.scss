@@ -6,25 +6,31 @@
     --blue1: rgb(85, 164, 255); //border trsnp
     --blue2: rgb(108, 177, 255);
     --blue3: rgba(40, 120, 212, 0.253);
+    --blue4: rgb(14, 57, 105);
     --purple1: #793ed8;
     --blue-transparency-clear: rgba(59, 131, 246, 0.205);
-    --blue-transparency-dark:rgba(75,69,255,0.4);
-    --grey1: #e2e2e2;
+    --blue-transparency-dark:rgba(76, 133, 255, 0.527);
+    --grey1: #f1f1f1;
     --grey2: #a7a7a7;//
     --grey3:   #1313139f;; //ok transparency
     --orange1: #ff721b;
     --border-blue:#332d7c;
     --border-purple: 1px solid var(--purple1);
-    --box-shadow: box-shadow: 2px 5px 5px #000000;
+    --box-shadow: 2px 5px 5px #000000;
     --box-shadow-purple: 2px 3px 18px 8px #381C66;
     --box-shadow-purple-extend: 2px 3px 30px 8px #381C66;
     --box-shadow-orange: 2px 3px 18px 5px  #ff721b;
     --box-shadow-blue: 0px 2px 18px 5px rgba(59, 131, 246, 0.712);
     --box-shadow-blue-expend: 0px 2px 10px 5px rgba(59, 131, 246, 0.712);
+    --box-shadow-inset-blue: inset 1px 0px 10px 1px rgba(255, 255, 255, 0.438);
     --text-shadow: 2px 5px 2px #000000;
     --text-shadow-b: 2px 5px 5px #000000;
     --text-shadow-blue: 0px 2px 5px 5px rgb(105, 175, 255);
     --linear-gradient: linear-gradient(to top, rgb(40, 40, 90), rgba(33, 33, 75, 0));
+    --linear-gradient-blue: linear-gradient(to top, rgb(62, 142, 248), rgba(0, 48, 136, 0.452));
+    --background-text-blue: linear-gradient(to top, rgb(50, 91, 202), white); 
+    --background-text-purple: linear-gradient(to top, rgb(91, 50, 202), white); 
+    --background-text-orange: linear-gradient(to top, rgb(255, 172, 76), white); 
     --opacity8: 0.8;
 }
 
@@ -38,4 +44,20 @@
 
 .box-shadow {
     box-shadow: 2px 5px 5px #000000;
+}
+
+.gradient-title-blue {
+    background:var(--background-text-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-title-purple {
+    background:var(--background-text-purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-title-orange {
+    background:var(--background-text-orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

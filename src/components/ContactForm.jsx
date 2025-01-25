@@ -96,8 +96,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className={styles.formContainer}>
-      <form onSubmit={handleSubmit}>
+    <div>
+      <form className= 'd-flex flex-column all-center 'onSubmit={handleSubmit}>
         <div className={styles.linesContainer}>
           <label htmlFor="name">Votre nom</label>
           <input
@@ -144,7 +144,7 @@ const ContactForm = () => {
           ></textarea>
           {errors.message && <p style={{ color: 'red' }}>{errors.message}</p>}
         </div>
-        <button type="submit">Envoyer</button>
+        <button className='btn-blue' type="submit">Envoyer</button>
       </form>
       {status && <p>{status}</p>} {/* Affiche le message de statut */}
       {showModal && (

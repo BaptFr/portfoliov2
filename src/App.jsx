@@ -12,7 +12,7 @@ function App() {
   return (
     <div >
       <div className= 'd-flex flex-column background background-image '>
-      <img src={Blur} className='background-image-blur absolute'/>
+        <img src={Blur} className='background-image-blur absolute'/>
         <div className='header-fixed'>
         <Header />
         </div>

@@ -9,7 +9,7 @@ import WorkLogo from '../../assets/logos/work-logo.webp';
 function Homepage () {
 
     return (
-        <div className='d-flex flex-fill flex-column'>
+        <div className=' d-flex flex-fill flex-column'>
             <section className={`${styles.introSection} section d-flex flex-row justify-content-sb align-items-center wrap`}>
                 <article className='article'>
                     <h1> BIENVENUE SUR MON PORTFOLIO ! </h1>
@@ -23,20 +23,20 @@ function Homepage () {
 
             {/* SECTION STACK  section (code more robust) */}
             <section className='section '>
-                <h2> STACK TECHNIQUE</h2>
+                <h2 className='gradient-title-purple'> STACK TECHNIQUE</h2>
                 <StackSection />
             </section>
 
 
             {/* COMPETENCES section */}
             <section className='section'>
-            <h2>METHODES <br /> & <br />COMPETENCES</h2>
+            <h2 className='gradient-title-blue'>METHODES <br /> & <br />COMPETENCES</h2>
                 <SkillsSection />
             </section >
 
             {/* SOFTSKILLS section*/}
             <section className='section'>
-            <h2>SOFT SKILLS</h2>
+            <h2 className='gradient-title-orange'>SOFT SKILLS</h2>
             <div className={`${styles.softSkillsContainer} p-30`}>
                     <ul className='d-flex flex-row justify-content-sa wrap gap-20'>
                         <li>ESPRIT D&apos; EQUIPE</li>
@@ -50,14 +50,13 @@ function Homepage () {
 
 
 
-            <h2 id={styles.formationTitle}>FORMATION <br /> & <br />EXPERIENCE PROFESSIONNELLE</h2>
+            <h2 className='gradient-title-orange mb-5'>FORMATION <br /> & <br />EXPERIENCE PROFESSIONNELLE</h2>
             <section className={`${styles.formationSection} d-flex flex-column all-center gap-100`}>
                 <div className={`${styles.formationLogosLegend} d-flex flex-row  gap-400 `}>
                     <img className='orange-model' src={EducationLogo} alt='education-logo'/>
                     <img className='purple-model' src={WorkLogo} alt='work-logo'/>
                 </div>
                 <div className={`${styles.timeline}`}>
-                    <div className={styles.timelineCircle}></div>
                     <div className={styles.timelineEmptyRight}>
                         <p>Depuis Déc. 2024</p>
                         <p></p>
@@ -68,7 +67,6 @@ function Homepage () {
                         <h4>Developpeur Front-End React Bénévole</h4>
                         <p>Association Their Memory</p>
                     </div>
-                    <div className={styles.timelineCircle}></div>
                      <div className={`${styles.timelineComponent} ${styles.timelineContent} orange-model`}>
                         <h4>Meta Front-End Developer- Professional Certificate</h4>
                         <p>Meta 9 courses program</p>
