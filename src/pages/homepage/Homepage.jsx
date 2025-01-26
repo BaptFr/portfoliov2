@@ -20,7 +20,6 @@ function Homepage () {
                 <img src={introImage} alt='intro-portrait' className='pageImage' />
             </section>
 
-
             {/* SECTION STACK  section (code more robust) */}
             <section className='section '>
                 <h2 className='gradient-title-purple'> STACK TECHNIQUE</h2>

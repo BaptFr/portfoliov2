@@ -1,20 +1,39 @@
 import styles from './ContactPage.module.scss';
-import ContactImage from '../../assets/images/bckg.png';
 import ContactForm from '../../components/ContactForm.jsx';
-function ContactPage () {
+import LinkedinLogo from '../../assets/logos/linkedin-logo.png';
+import GithubLogo from '../../assets/logos/github-logo.png';
 
+function ContactPage () {
     return (
         <div className='d-flex flex-column all-center gap-50'>
             <h2 className='relative mt-30 gradient-title-blue'> ME CONTACTER </h2>
-            <img src={ContactImage} alt='contact-logo m-auto relative ' className='' />
+
             <section className={`${styles.contactContainer} section  br-10 d-flex flex-column justify-content-sb align-items-center  wrap`}>
-              <div className= 'd-flex flex-row all-center gap-100'>
-                <article className='article'>
-                    <p>Vous souhaitez échanger à propos d&apos;un projet ou une autre demande ? < br/>
-                        N&apos;hésitez surtout pas à me contacter soit par mes réseaux, soit directement en remplissant
-                        le formulaire et je vous répondrai dans les plus brefs délais !
-                    </p>
-                </article>
+              <div className= 'd-flex flex-row all-center text-center gap-50 p-30 wrap'>
+                <div className={`${styles.articleContainer} d-flex flex-column p-50 gap-100  `}>
+                    <article className='text-align-center'>
+                        <p>Vous souhaitez échanger à propos d&apos;un projet ou une autre demande ? < br/>
+                            N&apos;hésitez surtout pas à me contacter soit par mes réseaux, soit directement en remplissant
+                            le formulaire et je vous répondrai dans les plus brefs délais !
+                        </p>
+                    </article>
+                    <div className='d-flex fex-row justify-content-sa gap-20'>
+                        <a
+                            href='https://www.linkedin.com/in/baptiste-salazar'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='.logoLink'>
+                            <img  src={LinkedinLogo} alt='linkedin-link m-auto relative ' className='btn-link' />
+                        </a>
+                        <a
+                            href='https://github.com/BaptFr'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='.logoLink'>
+                            <img  src={GithubLogo} alt='github-link m-auto relative ' className='btn-link' />
+                        </a>
+                    </div>
+                </div>
                 <div>
                     <ContactForm />
                 </div>

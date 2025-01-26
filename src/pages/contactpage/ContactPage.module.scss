@@ -1,16 +1,14 @@
-
 .contactContainer {
-    width:70%;
+    width: 70%;
     padding: 0;
     margin: auto;
-   background-color:var(--secondary);
-   border: 1px solid var(--blue1);
-   box-shadow: var(--box-shadow-blue);
-    img {
-        width: 100px;
-        height: 100px;
-    }
+    background-color: var(--secondary);
+    border: 1px solid var(--blue1);
+    box-shadow: var(--box-shadow-blue);
+}
 
+.articleContainer{
+    max-width: 50%;
 }
 
 

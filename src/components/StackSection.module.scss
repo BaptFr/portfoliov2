@@ -8,28 +8,31 @@
     color: #ffffff;
 }
 
+.stackCard{
+    &:hover{
+        .stackTitle {
+            border-bottom: 2px solid var(--purple1);
+        }
+    }
+    .stackTitle {
+        height: 120px;
+        width: 90%;
+        border-radius: 20px 20px 0px 0px;
+        border-bottom: 1px solid var(--purple1);
+        text-shadow: var(--text-shadow);
+        h3{
+            font-size: 1.3em;
+            line-height: 1.1em;
+        }
+    }
+    .techContainer {
+        width: 300px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 75px;
 
-
-.stackTitle {
-    height: 120px;
-    width: 90%;
-    border-radius: 20px 20px 0px 0px;
-    border-bottom: 1px solid var(--purple1);
-    text-shadow: var(--text-shadow);
-    h3{
-        font-size: 1.3em;
-        line-height: 1.1em;
     }
 
 }
-
-.techContainer {
-    width: 300px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 75px;
-
-}
-

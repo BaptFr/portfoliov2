@@ -9,11 +9,12 @@
   position: relative;
   z-index: 2;
   width: 50%;
-  padding:35px;
+  padding: 35px;
   border-radius: 10px;
   text-align: center;
   p {
-    text-shadow: var(--text-shadow-b)
+    text-shadow: var(--text-shadow-b);
+
   }
 }
 
@@ -35,10 +36,38 @@
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: var(--box-shadow-inset-blue);
-  background-color: var(--blue4);
-  border: 1px solid var(--blue1)
+  background-color: transparent;
+  border: var(--border-blue);
+  border-radius: 10px;
+  &:hover{
+    cursor: pointer;
+    border-color: #ffffff;
+    box-shadow: var(--box-shadow-blue-extend);
+  }
+  &:active{
+    box-shadow: var(--box-shadow-blue-reduce);
+    border: none;
+    transform: scale(0.9);
+  }
 }
+
+.btn-link {
+
+  border: var(--border-blue);
+  border-radius: 10px;
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    border-color: #ffffff;
+    box-shadow: var(--box-shadow-blue);
+  }
+  &:active{
+    box-shadow: var(--box-shadow-blue-reduce);
+    border: none;
+    transform: scale(0.9);
+  }
+}
+
 
 .logoLink{
   width: 500px;
@@ -62,7 +91,7 @@
   height: auto;
 }
 
-// Cards
+// CARDS
 .cardContainer {
   width: 25%;
   height: 700px;
@@ -116,7 +145,8 @@
   }
 }
 
-//backgrounds
+// BACKGROUNDS
+
 .blue-model{
   background-color: var(--secondary);
   box-shadow: var(--box-shadow-blue);
@@ -148,9 +178,13 @@
 }
 .purple-model{
   box-shadow: var(--box-shadow-purple);
-  border: 1px solid white;//var(--purple1);
+  border: 1px solid #ffffff;
   background-color: var(--secondary);
   border-radius: 15px;
+  &:hover{
+    box-shadow: var(--box-shadow-purple-extend);
+  }
+
 }
 .purple-model-modal{
   background-color:  #0f0e11;
@@ -182,7 +216,14 @@
   border: 1px solid white;//var(--orange1);
   border-radius: 15px;
 }
-//image & blur
+
+//IMAGE & BLUR
+
+.logo-intro {
+  width: 200px;
+  height: 200px;
+  color: red;
+}
 .background-image-blur{
   width: 100%;
   height: auto;
