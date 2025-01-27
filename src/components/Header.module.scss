@@ -1,5 +1,6 @@
-header{
-    position: relative;
+@use '../assets/styles/mixins' as mixin;
+
+.headerContainer {
     z-index:2;
     width: 90%;
     margin: auto;
@@ -7,11 +8,29 @@ header{
     border-radius: 0px 0px 30px 30px;
     border: 1px solid var(--blue1);
     overflow: hidden;
+    justify-content: space-between;
+
+    li{
+        flex-direction: row;
+        align-items: center;
+    }
+    i {
+        font-size: 1em;
+    }
+
+    @include mixin.md-lt {
+        width: 50%;
+        justify-content: center;
+        gap: 2em;
+        button{
+            display: none;
+        }
+    }
+
+    @include mixin.sm-lt {
+        gap: 10px;
+    }
 }
 
 
-
-a{
-    text-decoration: none;
-}
 

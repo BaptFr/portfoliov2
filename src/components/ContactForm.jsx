@@ -136,7 +136,7 @@ const ContactForm = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            maxLength={500} // Limite à 500 caractères
+            maxLength={500} // 500caract limit
             required
             style={{
               borderColor: errors.message ? 'red' : '',
@@ -146,7 +146,7 @@ const ContactForm = () => {
         </div>
         <button className='btn-blue' type="submit">Envoyer</button>
       </form>
-      {status && <p>{status}</p>} {/* Affiche le message de statut */}
+      {status && <p>{status}</p>} {/*Statut message */}
       {showModal && (
         <div className={styles.contactModal}>
           <div className={styles.contactModalContent}>

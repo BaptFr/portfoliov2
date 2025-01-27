@@ -24,7 +24,7 @@
   font-family: 'Outfit';
   color: #ffffff;
   background-color: transparent;
-  font-size: 18px;
+  font-size: 1em;
   transition: all  0.2s;
 }
 
@@ -146,7 +146,6 @@
 }
 
 // BACKGROUNDS
-
 .blue-model{
   background-color: var(--secondary);
   box-shadow: var(--box-shadow-blue);
@@ -218,7 +217,6 @@
 }
 
 //IMAGE & BLUR
-
 .logo-intro {
   width: 200px;
   height: 200px;
@@ -249,4 +247,11 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   z-index: 1;
+}
+
+
+//Icons
+
+.i1{
+  font-size: 70px;
 }

@@ -1,14 +1,58 @@
-.contactContainer {
-    width: 70%;
+@use '../../assets/styles/mixins' as mixin;
+
+.contactPageContainer {
+    width: 80%;
     padding: 0;
     margin: auto;
     background-color: var(--secondary);
     border: 1px solid var(--blue1);
     box-shadow: var(--box-shadow-blue);
+
+}
+
+.contactContainer {
+    @include mixin.lg-lt {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    @include mixin.lg-lt {
+        padding: 10px;
+    }
+
+    @include mixin.sm-lt {
+        width: 100%;
+       flex-direction: column;
+       align-items: center;
+
+    }
+    @include mixin.xs {
+        padding: 0;
+    }
 }
 
 .articleContainer{
     max-width: 50%;
+    @include mixin.lg-lt {
+        max-width: 85%;
+        padding: 20px;
+        gap: 20px;
+    }
+    @include mixin.md-lt {
+        padding: 10px;
+       
+    }
+
+    p{
+        font-size: 1.4em;
+    
+        @include mixin.md-lt {
+            font-size: 1.1em;
+        }
+        @include mixin.xs{
+            font-size: 0.8em;
+        }
+    }
 }
 
 

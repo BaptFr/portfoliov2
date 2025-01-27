@@ -8,9 +8,9 @@ function ContactPage () {
         <div className='d-flex flex-column all-center gap-50'>
             <h2 className='relative mt-30 gradient-title-blue'> ME CONTACTER </h2>
 
-            <section className={`${styles.contactContainer} section  br-10 d-flex flex-column justify-content-sb align-items-center  wrap`}>
-              <div className= 'd-flex flex-row all-center text-center gap-50 p-30 wrap'>
-                <div className={`${styles.articleContainer} d-flex flex-column p-50 gap-100  `}>
+            <section className={`${styles.contactPageContainer}  section  br-10 d-flex flex-column justify-content-sb align-items-center wrap`}>
+              <div className= {`${styles.contactContainer}  d-flex flex-row all-center text-center gap-50 p-30 wrap`}>
+                <div className={`${styles.articleContainer} d-flex flex-column p-40 gap-100  `}>
                     <article className='text-align-center'>
                         <p>Vous souhaitez échanger à propos d&apos;un projet ou une autre demande ? < br/>
                             N&apos;hésitez surtout pas à me contacter soit par mes réseaux, soit directement en remplissant
