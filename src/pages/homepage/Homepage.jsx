@@ -10,7 +10,7 @@ function Homepage () {
 
     return (
         <div className=' d-flex flex-fill flex-column'>
-            <section className={`${styles.introSection} section d-flex flex-row justify-content-sb align-items-center wrap`}>
+            <section className={`${styles.introSection} br section d-flex justify-content-sb align-items-center wrap`}>
                 <article className='article'>
                     <h1> BIENVENUE SUR MON PORTFOLIO ! </h1>
                     <p>Explorez ici mon parcours et une sélection de projets qui témoignent
@@ -21,7 +21,7 @@ function Homepage () {
             </section>
 
             {/* SECTION STACK  section (code more robust) */}
-            <section className='section '>
+            <section className='section br'>
                 <h2 className='gradient-title-purple'> STACK TECHNIQUE</h2>
                 <StackSection />
             </section>
@@ -50,8 +50,8 @@ function Homepage () {
 
 
             <h2 className='gradient-title-orange mb-5'>FORMATION <br /> & <br />EXPERIENCE PROFESSIONNELLE</h2>
-            <section className={`${styles.formationSection} d-flex flex-column all-center gap-100`}>
-                <div className={`${styles.formationLogosLegend} d-flex flex-row  gap-400 `}>
+            <section className={`${styles.formationSection} br d-flex flex-column all-center gap-100`}>
+                <div className={`${styles.formationLogosLegend} br d-flex flex-row `}>
                     <img className='orange-model' src={EducationLogo} alt='education-logo'/>
                     <img className='purple-model' src={WorkLogo} alt='work-logo'/>
                 </div>

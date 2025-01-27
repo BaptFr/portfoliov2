@@ -10,7 +10,22 @@
     mask-repeat: no-repeat;
     mask-size: 100% 100%;
     mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
-
+    @include mixin.sm-lt{
+        height: 250px;
+    }
+    img{
+        width: 75px;
+        height: 70px;
+        flex-shrink: 0;
+        @include mixin.md{
+            width:40%;
+            height: auto;
+        }
+        @include mixin.sm-lt{
+            width: 30%;
+            height: auto;
+        }
+    }
 }
 
 .slideY {
@@ -22,11 +37,7 @@
     animation: slideY 30s linear infinite;
 }
 
-img{
-    width: 75px;
-    height: 70px;
-    flex-shrink: 0;
-}
+
 
 @keyframes slideY{
     0% {

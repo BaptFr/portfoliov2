@@ -1,3 +1,5 @@
+@use './mixins' as mixin;
+
 .section {
   z-index: 1;
   padding: 22px;
@@ -12,8 +14,14 @@
   padding: 35px;
   border-radius: 10px;
   text-align: center;
+  @include mixin.sm-lt {
+    width: 100%;
+  }
   p {
     text-shadow: var(--text-shadow-b);
+    @include mixin.xs{
+      font-size: 1.1em;
+    }
 
   }
 }
@@ -99,27 +107,57 @@
   padding: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   transition: all 0.2s ease;
   &:hover{
     transform: scale(1.005);
     box-shadow: 0px 2px 18px 5px rgb(59, 131, 246);
   }
+  @include mixin.lg{
+    width: 30%;
+  }
+  @include mixin.sm{
+    width: 45%;
+    height: 620px;
+  }
+  @include mixin.xs{
+    width: 80%;
+    height: auto;
+  }
   h3 {
-    font-size: 1.5em;
+    height: 20%;
+    font-size: 1.4em;
     font-weight: 4500;
-    text-shadow: var(--text-shadow)
+    text-shadow: var(--text-shadow);
+    @include mixin.sm{
+      height: 15%;
+      font-size: 1.3em;
+    }
+    @include mixin.xs{
+      height: 10%;
+    }
   }
   img {
     width: 150px;
     height: auto;
   }
   p{
-    width: 80%;
+    width: 85%;
+    height: auto;
     text-align: center;
     text-shadow: none;
     font-size: 1em;
+    @include mixin.lg{
+      width: 90%;
+      font-size: 0.95em;
+    }
+    @include mixin.md-lt {
+      font-size: 0.8em;
+    }
+    @include mixin.xs{
+      width: 90%;
+      font-size: 1em;
+    }
   }
 }
 
