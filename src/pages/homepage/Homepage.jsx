@@ -29,7 +29,7 @@ function Homepage () {
 
             {/* COMPETENCES section */}
             <section className='section'>
-            <h2 className='gradient-title-blue'>METHODES <br /> & <br />COMPETENCES</h2>
+            <h2 className='gradient-title-blue-big'>METHODES <br /> & <br />COMPETENCES</h2>
                 <SkillsSection />
             </section >
 
@@ -49,9 +49,9 @@ function Homepage () {
 
 
 
-            <h2 className='gradient-title-orange mb-5'>FORMATION <br /> & <br />EXPERIENCE PROFESSIONNELLE</h2>
-            <section className={`${styles.formationSection} br d-flex flex-column all-center gap-100`}>
-                <div className={`${styles.formationLogosLegend} br d-flex flex-row `}>
+            <h2 className='gradient-title-orange-big mb-5'>FORMATION <br /> & <br />EXPERIENCE PROFESSIONNELLE</h2>
+            <section className={`${styles.formationSection} d-flex flex-column all-center gap-100`}>
+                <div className={`${styles.formationLogosLegend} d-flex flex-row `}>
                     <img className='orange-model' src={EducationLogo} alt='education-logo'/>
                     <img className='purple-model' src={WorkLogo} alt='work-logo'/>
                 </div>

@@ -40,12 +40,11 @@
     }
     @include mixin.md-lt {
         padding: 10px;
-       
     }
 
     p{
         font-size: 1.4em;
-    
+
         @include mixin.md-lt {
             font-size: 1.1em;
         }

@@ -1,13 +1,19 @@
 @use '../assets/styles/mixins' as mixin;
 
 .allProjectsContainer {
-    padding: 50px 0px;
+  padding: 50px 0px;
+  @include mixin.md{
+    gap: 15px;
   }
+  @include mixin.sm-lt{
+    gap: 40px;
+  }
+}
 
 //CARD by project
 .projectCard {
   position: relative;
-  width: 500px;
+  width: 30%;
   height: 600px;
   border-radius: 15px;
   overflow: hidden;
@@ -29,6 +35,22 @@
       }
     }
   }
+  @include mixin.lg {
+    width: 42%;
+    height: 500px;
+  }
+  @include mixin.md {
+    width: 45%;
+    height: 500px;
+  }
+  @include mixin.sm {
+    width: 80%;
+    height: 400px;
+  }
+  @include mixin.xs {
+    width: 80%;
+    height: 350px;
+  }
   .cardOverlay {
     position: absolute;
     top: 0;
@@ -42,7 +64,7 @@
   //TECHS
   .cardTechsBanner {
     position: relative;
-    width: 75%;
+    width: 78%;
     height: 30%;
     border-top: none;
     border-radius:0px 0px 10px 10px;
@@ -50,14 +72,29 @@
     border-top: none;
     background-color: #100529b9;
     box-shadow: var(--box-shadow-purple);
+    @include mixin.lg-lt {
+      height: 35%;
+      width: 85%;
+    }
+    @include mixin.md-lt {
+      height: 35%;
+    }
+    @include mixin.sm {
+      width: 67%;
+    }
+    @include mixin.xs{
+      width: 75%;
+      height: 68%;
+    }
+
     .techBannerLogosContainer{
-      width: 80px;
+      width: 90px;
       margin: 0;
     }
     img{
       padding: 5px;
-      width: 50px;
-      height:50px;
+      width: 60px;
+      height:60px;
       background-color: #0b0b22;
       border-radius: 10px;
     }
@@ -70,6 +107,12 @@
       font-size: 1.4em;
       color: white;
       text-shadow: 2px 2px 5px #000000;
+      @include mixin.sm {
+        font-size: 1.1em;
+      }
+      @include mixin.xs {
+        font-size: 1em;
+      }
     }
   }
 }
@@ -101,7 +144,24 @@
     a {
       display: block;
       margin:0;
-      font-weight: bold;
+      font-weight: 450;
+      &:hover {
+        font-weight: bold;
       }
+      @include mixin.sm-lt {
+        font-size: 0.8em;
+      }
+    }
+    p{
+      mixin.sm-lt {
+        font-size: 0.7em;
+      }
+    }
+
+
+    @include mixin.md-lt {
+      width: 80%;
+      padding: 15px;
+    }
   }
 }

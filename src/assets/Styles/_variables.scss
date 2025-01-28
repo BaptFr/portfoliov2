@@ -1,7 +1,7 @@
 @use './mixins' as mixin;
 :root {
     --primary: #030205;
-    --secondary: #0f0e11ad;
+    --secondary: #0f0e11c7;
     --third: #0d0d0e75;
     --variant-secondary: linear-gradient(to top, #0f0e11, #000000);; 
     --blue1: rgb(85, 164, 255); //border trsnp
@@ -21,6 +21,7 @@
     --box-shadow: 2px 5px 5px #000000;
     --box-shadow-purple: 2px 3px 18px 8px #381C66;
     --box-shadow-purple-extend: 2px 3px 30px 8px #381C66;
+    --box-shadow-purple-reduce: 2px 3px 30px 2px #381C66;
     --box-shadow-orange: 2px 3px 18px 5px  #ff721b;
     --box-shadow-blue: 0px 2px 18px 5px rgba(59, 131, 246, 0.712);
     --box-shadow-blue-extend: 0px 2px 10px 10px rgba(59, 131, 246, 0.712);
@@ -31,9 +32,11 @@
     --text-shadow-blue: 0px 2px 5px 5px rgb(105, 175, 255);
     --linear-gradient: linear-gradient(to top, rgb(40, 40, 90), rgba(33, 33, 75, 0));
     --linear-gradient-blue: linear-gradient(to top, rgb(62, 142, 248), rgba(0, 48, 136, 0.452));
-    --background-text-blue: linear-gradient(to top, rgb(50, 91, 202), white); 
-    --background-text-purple: linear-gradient(to top, rgb(91, 50, 202), white); 
-    --background-text-orange: linear-gradient(to top, rgb(255, 172, 76), white); 
+    --background-text-blue: linear-gradient(to top, rgb(50, 91, 202), #ffffff, #ffffff);
+    --background-text-blue-big: linear-gradient(to top, rgb(50, 91, 202), #ffffff, #ffffff, #ffffff); 
+    --background-text-purple: linear-gradient(to top, rgb(91, 50, 202), #ffffff, #ffffff); 
+    --background-text-orange: linear-gradient(to top, rgb(255, 172, 76), #ffffff, #ffffff); 
+    --background-text-orange-big: linear-gradient(to top, rgb(255, 172, 76), #ffffff, #ffffff, #ffffff); 
     --opacity8: 0.8;
 }
 
@@ -54,6 +57,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.gradient-title-blue-big {
+    background:var(--background-text-blue-big);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .gradient-title-purple {
     background:var(--background-text-purple);
     -webkit-background-clip: text;
@@ -64,3 +72,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.gradient-title-orange-big {
+    background:var(--background-text-orange-big);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+

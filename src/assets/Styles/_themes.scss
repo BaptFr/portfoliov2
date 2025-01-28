@@ -60,9 +60,10 @@
 }
 
 .btn-link {
-
+  width: 100px;
   border: var(--border-blue);
   border-radius: 10px;
+  box-shadow: var(--box-shadow-blue-reduce);
   &:hover{
     cursor: pointer;
     transform: scale(1.1);
@@ -70,7 +71,7 @@
     box-shadow: var(--box-shadow-blue);
   }
   &:active{
-    box-shadow: var(--box-shadow-blue-reduce);
+    box-shadow: none;
     border: none;
     transform: scale(0.9);
   }
@@ -189,6 +190,9 @@
   box-shadow: var(--box-shadow-blue);
   border: 1px solid white; //var(--blue2);
   border-radius: 15px;
+  &:hover{
+    background-color:  #1a191dc7;
+  }
 }
 .blue-model-modal{
   background-color:  #0f0e11;
@@ -288,8 +292,3 @@
 }
 
 
-//Icons
-
-.i1{
-  font-size: 70px;
-}
