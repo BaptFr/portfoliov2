@@ -8,11 +8,28 @@
     .errorTitle{
         font-size: 8em;
         font-weight: 600;
+        @include mixin.lg{
+            font-size: 7em;
+            font-weight: 500;
+        }
+        @include mixin.md{
+            font-size: 6em;
+            font-weight: 500;
+        }
+        @include mixin.sm{
+            font-size: 4.5em;
+        }
+        @include mixin.xs{
+            font-size: 2em;
+        }
     }
 }
 .subtitle {
     margin-top: 0px;
-    text-shadow: 2px 2px 4px black, -2px -2px 4px black, 2px -2px 4px black, -2px 2px 4px black;
+    text-shadow: var(--text-shadow-outline);
+    @include mixin.xs{
+        font-size: 1.3em;
+    }
 }
 
 .returnNavLink {
@@ -32,6 +49,16 @@
         box-shadow: var(--box-shadow-purple-reduce);
         font-weight: 350;
         font-size: 1.4em;
+    }
+    @include mixin.md{
+        font-weight: 300;
+        font-size: 1.4em;
+    }
+    @include mixin.sm{
+        font-size: 1.2em;
+    }
+    @include mixin.xs{
+        font-size: 0.6em;
     }
 }
 

@@ -8,8 +8,8 @@ function Projectspage () {
 
     return (
         <div className= {`${styles.projectsContainer} d-flex flex-fill flex-column`}>
-            <section className={`${styles.projectsIntroContainer} br d-flex flex-column justify-content-sb align-items-center m-20 text-center`}>
-                <h2 className='relative gradient-title-purple'> MES PROJETS</h2>
+            <section className={`${styles.projectsIntroContainer} d-flex flex-column justify-content-sb align-items-center m-20 text-center`}>
+                <h2 className='relative text-shadow-outline'> MES PROJETS</h2>
                 <article className='relative'>
                     <p>Vous trouverez ici une sélection de mes réalisations ou projets en cours.<br />
                     Découvrez différents projets de développement Front-End, Back-End, Full-Stack mais aussi de Debug & Optimisation SEO.<br />
@@ -19,10 +19,10 @@ function Projectspage () {
                     </p>
                 </article>
             </section>
-            <section className='br'>
+            <section>
                 <Projects />
             </section>
-            <div className='br d-flex all-center p-10'>
+            <div className='d-flex all-center p-10'>
                 <a
                     href='https://github.com/BaptFr'
                     target='_blank'

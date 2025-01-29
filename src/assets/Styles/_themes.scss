@@ -254,6 +254,9 @@
   box-shadow: var(--box-shadow-orange);
   border: 1px solid white;//var(--orange1);
   border-radius: 15px;
+  &:hover{
+    box-shadow: var(--box-shadow-orange-extend);
+  }
 }
 
 //IMAGE & BLUR

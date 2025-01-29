@@ -20,14 +20,17 @@
     --border-purple: 1px solid var(--purple1);
     --box-shadow: 2px 5px 5px #000000;
     --box-shadow-purple: 2px 3px 18px 8px #381C66;
-    --box-shadow-purple-extend: 2px 3px 30px 8px #381C66;
+    --box-shadow-purple-extend: 2px 3px 25px 10px #381C66;
     --box-shadow-purple-reduce: 2px 3px 30px 2px #381C66;
     --box-shadow-orange: 2px 3px 18px 5px  #ff721b;
+    --box-shadow-orange-extend: 2px 3px 15px 8px  #ff721b;
     --box-shadow-blue: 0px 2px 18px 5px rgba(59, 131, 246, 0.712);
     --box-shadow-blue-extend: 0px 2px 10px 10px rgba(59, 131, 246, 0.712);
     --box-shadow-blue-reduce: 0px 2px 10px 2px rgba(59, 131, 246, 0.712);
     --box-shadow-inset-blue: inset 1px 0px 10px 1px rgba(255, 255, 255, 0.438);
     --text-shadow: 2px 5px 2px #000000;
+    --text-shadow-outline: 2px 2px 4px black, -2px -2px 4px black, 2px -2px 4px black, -2px 2px 4px black;
+    --text-shadow-t: 2px 1px 4px #000000;
     --text-shadow-b: 2px 5px 5px #000000;
     --text-shadow-blue: 0px 2px 5px 5px rgb(105, 175, 255);
     --linear-gradient: linear-gradient(to top, rgb(40, 40, 90), rgba(33, 33, 75, 0));
@@ -53,6 +56,9 @@
     box-shadow: 2px 5px 5px #000000;
 }
 
+.text-shadow-outline{
+    text-shadow: var(--text-shadow-outline);
+}
 
 .gradient-title-blue-invert {
     background:var(--background-text-blue-invert);

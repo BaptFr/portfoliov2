@@ -11,9 +11,9 @@ function Homepage () {
     return (
         <div className='d-flex flex-fill flex-column'>
             <section className={`${styles.introSection} section d-flex flex-column justify-content-sb align-items-center wrap`}>
-            <h1> Bienvenue Sur Mon Portfolio ! </h1>
+            <h1 className='text-shadow-outline'> Bienvenue Sur Mon Portfolio ! </h1>
                 <article className='article d-flex flex-row all-center'>
-                    <p>Retrouvez ici mon parcours et mes compétences. <br />Découvrez mes projets et contactez-moi via le menu.
+                    <p className='text-shadow-outline' >Retrouvez ici mon parcours et mes compétences. <br />Découvrez mes projets et contactez-moi via le menu.
                     </p>
                     <img src={introImage} alt='intro-portrait' className='pageImage' />
                 </article>
