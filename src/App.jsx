@@ -11,12 +11,12 @@ import Blur from './assets/images/blur1.png';
 function App() {
   return (
     <div >
-      <div className= 'd-flex flex-column background background-image '>
+      <div>
         <img src={Blur} className='background-image-blur absolute'/>
         <div className='header-fixed'>
         <Header />
         </div>
-        <div className= ' d-flex flex-column'>
+        <div>
         <Suspense>
           <Outlet />
         </Suspense>

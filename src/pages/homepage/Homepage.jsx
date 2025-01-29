@@ -9,15 +9,15 @@ import WorkLogo from '../../assets/logos/work-logo.webp';
 function Homepage () {
 
     return (
-        <div className=' d-flex flex-fill flex-column'>
-            <section className={`${styles.introSection} br section d-flex justify-content-sb align-items-center wrap`}>
-                <article className='article'>
-                    <h1> BIENVENUE SUR MON PORTFOLIO ! </h1>
-                    <p>Explorez ici mon parcours et une sélection de projets qui témoignent
-                    de ma formation et de mes compétences.
+        <div className='d-flex flex-fill flex-column'>
+            <section className={`${styles.introSection} section d-flex flex-column justify-content-sb align-items-center wrap`}>
+            <h1> Bienvenue Sur Mon Portfolio ! </h1>
+                <article className='article d-flex flex-row all-center'>
+                    <p>Retrouvez ici mon parcours et mes compétences. <br />Découvrez mes projets et contactez-moi via le menu.
                     </p>
+                    <img src={introImage} alt='intro-portrait' className='pageImage' />
                 </article>
-                <img src={introImage} alt='intro-portrait' className='pageImage' />
+                
             </section>
 
             {/* SECTION STACK  section (code more robust) */}

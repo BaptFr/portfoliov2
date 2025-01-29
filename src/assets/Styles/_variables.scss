@@ -32,11 +32,12 @@
     --text-shadow-blue: 0px 2px 5px 5px rgb(105, 175, 255);
     --linear-gradient: linear-gradient(to top, rgb(40, 40, 90), rgba(33, 33, 75, 0));
     --linear-gradient-blue: linear-gradient(to top, rgb(62, 142, 248), rgba(0, 48, 136, 0.452));
-    --background-text-blue: linear-gradient(to top, rgb(50, 91, 202), #ffffff, #ffffff);
-    --background-text-blue-big: linear-gradient(to top, rgb(50, 91, 202), #ffffff, #ffffff, #ffffff); 
-    --background-text-purple: linear-gradient(to top, rgb(91, 50, 202), #ffffff, #ffffff); 
-    --background-text-orange: linear-gradient(to top, rgb(255, 172, 76), #ffffff, #ffffff); 
-    --background-text-orange-big: linear-gradient(to top, rgb(255, 172, 76), #ffffff, #ffffff, #ffffff); 
+    --background-text-blue-invert: linear-gradient(to bottom,  #579aff52, #448fff, #ffffff);
+    --background-text-blue: linear-gradient(to top, #579aff52, #4f95ff, #ffffff, #ffffff);
+    --background-text-blue-big: linear-gradient(to top, #579aff, #87c5fc, #ffffff, #ffffff); 
+    --background-text-purple: linear-gradient(to top, rgba(91, 50, 202, 0.322), rgb(124, 89, 219), #ffffff, #ffffff); 
+    --background-text-orange: linear-gradient(to top, rgb(255, 172, 76),  #ffe4bb, #ffffff); 
+    --background-text-orange-big: linear-gradient(to top, rgb(255, 172, 76), #ffe4bb, #ffffff, #ffffff); 
     --opacity8: 0.8;
 }
 
@@ -52,6 +53,12 @@
     box-shadow: 2px 5px 5px #000000;
 }
 
+
+.gradient-title-blue-invert {
+    background:var(--background-text-blue-invert);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .gradient-title-blue {
     background:var(--background-text-blue);
     -webkit-background-clip: text;

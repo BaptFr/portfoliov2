@@ -9,7 +9,7 @@ function Projectspage () {
     return (
         <div className= {`${styles.projectsContainer} d-flex flex-fill flex-column`}>
             <section className={`${styles.projectsIntroContainer} br d-flex flex-column justify-content-sb align-items-center m-20 text-center`}>
-                <h2 className='relative gradient-title-blue'> MES PROJETS</h2>
+                <h2 className='relative gradient-title-purple'> MES PROJETS</h2>
                 <article className='relative'>
                     <p>Vous trouverez ici une sélection de mes réalisations ou projets en cours.<br />
                     Découvrez différents projets de développement Front-End, Back-End, Full-Stack mais aussi de Debug & Optimisation SEO.<br />

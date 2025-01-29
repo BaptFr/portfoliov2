@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 function Header () {
     return (
-        <header className={` ${styles.headerContainer} br relative d-flex align-items-center p-15 `}>
+        <header className={` ${styles.headerContainer} relative d-flex align-items-center p-15 z-index4 `}>
             <div className='overlay'></div>
             <img className='site-logo z-index1' src={ logo } alt='logo'></img>
             <nav className=' z-index2'>

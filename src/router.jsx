@@ -5,6 +5,7 @@ import { lazy } from "react";
 const Homepage = lazy(() => import('./pages/homepage/Homepage'));
 const Projectspage= lazy(() => import('./pages/projectspage/Projectspage'));
 const ContactPage = lazy(() => import('./pages/contactpage/ContactPage'));
+const ErrorPage = lazy(() => import('./pages/errorpage/ErrorPage'));
 
 export const router = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
             {
                 path:'contact',
                 element: <ContactPage />
+            },
+            {
+                path:'*',
+                element: <ErrorPage />
             }
         ]
     },
