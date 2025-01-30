@@ -24,9 +24,9 @@
   }
 }
 
-//ANIMATED ARROWS INTROS
+//ANIMATED ARROWS for Intro Sections
 .arrowsContainer {
-  margin: 50px;
+  margin: 75px 0px;
   &:hover{
     cursor: pointer;
   }
@@ -86,6 +86,44 @@
 }
 
 //BUTTONS & LINKS
+.scrollToTopButton {
+  position: fixed;
+  opacity: 0;
+  bottom: 25px;
+  right: 25px;
+  max-width: 10%;
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #ffffff;
+  background: linear-gradient(135deg, #5500ff5d, #8e2de2);
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.5s ease, box-shadow 0.6s ease;
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  &:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #5500ff, #8e2de2); 
+    box-shadow: 0px 6px 15px rgba(142, 45, 226, 0.5);
+  }
+  &:active{
+    transform: scale(0.95);
+    box-shadow: none;
+  }
+  img{
+   width: 1.5em;
+  }
+}
+
+
+
 .btn {
   padding: 5px 15px 0px 4px;
   border : none;
@@ -104,13 +142,12 @@
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-  background-color: transparent;
   border: var(--border-blue);
   border-radius: 10px;
   &:hover{
     cursor: pointer;
     border-color: #ffffff;
-    box-shadow: var(--box-shadow-blue-extend);
+    box-shadow: var(--box-shadow-blue);
   }
   &:active{
     box-shadow: var(--box-shadow-blue-reduce);
@@ -119,7 +156,7 @@
   }
 }
 
-.btn-link {
+.image-btn-link {
   width: 100px;
   border: var(--border-blue);
   border-radius: 10px;
@@ -137,28 +174,13 @@
   }
 }
 
-.logoLink{
+.logo-link{
   width: 500px;
   height: 400px;
   &:hover{
     cursor: pointer;
   }
 }
-
-.hover-effect-btn{
-  &:hover {
-    .btn,
-    .icons{
-    cursor: pointer;
-    }
-  }
-}
-
-.pageImage {
-  width: 25%;
-  height: auto;
-}
-
 
 
 // CARDS
@@ -245,7 +267,7 @@
   }
 }
 
-// BACKGROUNDS
+// BACKGROUNDS COLORS MODELS & MODALS
 .blue-model{
   background-color: var(--secondary);
   box-shadow: var(--box-shadow-blue);
@@ -255,29 +277,7 @@
     background-color:  #1a191dc7;
   }
 }
-.blue-model-modal{
-  background-color:  #0f0e11;
-  border: 2px solid rgb(51, 80, 243);
-  border-radius: 15px;
-  box-shadow: var(--box-shadow-blue);
-  text-align: center;
-  h3 {
-    font-weight: 300;
-    margin: auto;
-    color: var(--blue1);
-  }
-  p {
-    font-weight: 200;
-  }
-  a{
-    color: var(--blue1);
-    text-decoration: none;
-    &:hover {
-      color: #ffffff;
-      cursor: pointer;
-    }
-  }
-}
+
 .purple-model{
   box-shadow: var(--box-shadow-purple);
   border: 1px solid #ffffff;
@@ -312,6 +312,7 @@
     }
   }
 }
+
 .orange-model{
   background-color: var(--secondary);
   box-shadow: var(--box-shadow-orange);
@@ -323,11 +324,7 @@
 }
 
 //IMAGE & BLUR
-.logo-intro {
-  width: 200px;
-  height: 200px;
-  color: red;
-}
+
 .background-image-blur{
   width:70%;
   height: auto;
@@ -360,6 +357,5 @@
 
 
 
-//ANIMATION KEYFRAMES
 
 

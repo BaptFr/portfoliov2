@@ -2,16 +2,14 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
 import styles from './App.module.scss';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import { Suspense } from 'react';
-import { useLocation } from 'react-router-dom';
 import Blur from './assets/images/blur1.png';
 
 
 function App() {
-  const location = useLocation(); 
+  const location = useLocation();
   const isLandingPage = location.pathname === '/'; //To Hide the Header
-
 
   return (
     <div >

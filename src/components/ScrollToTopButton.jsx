@@ -1,34 +1,37 @@
 import { useEffect, useState } from "react";
-import styles from './ScrollToTopButton.module.scss';
+import Fusee from '../assets/logos/fusee.png';
 
 
 function ScrollToTopButton ({ targetRef })  {
 
-     const [showButton, SetShowButton] = useState(false);
+    const [visible, setVisible] = useState(false);
 
-    useEffect ( () => {
-        const handleScroll = () => {
-            if(window.scroll > 50) {
-            SetShowButton(true)
-        } else {
-            SetShowButton(false)
-        }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return ()=> window.removeEventListener('scroll', handleScroll);
-    }, [])
 
-    const scrollToTop = ()=> {
-        targetRef.current?.scrollIntoView ({ behavior: 'smooth'});
-    };
+    useEffect(() => {
+        const toggleVisibility = () => {
+          setVisible(window.scrollY > 20); // buttonReveal after first scrolls
+        };
+        window.addEventListener("scroll", toggleVisibility);
+        return () => window.removeEventListener("scroll", toggleVisibility);
+        }, []);
+
+        const scrollToTarget = () => {
+            if (targetRef && targetRef.current) {
+              targetRef.current.scrollIntoView({ behavior: "smooth" });
+            }
+          };
 
 
     return (
-        showButton && (
-        <button onClick={scrollToTop} className={styles.backToTopButton}>
-            ⬆ Remonter
-        </button>
-        )
+            <div className='z-index1000'>
+                    <button  onClick={scrollToTarget}
+                    className= {` scrollToTopButton d-flex flex-row all-center ${visible ? 'show' : 'hide'}`}
+                    >
+                        <img src={Fusee} className='m-0 ' />
+                        Remonter
+                    </button>
+            </div>
+
     );
 };
 

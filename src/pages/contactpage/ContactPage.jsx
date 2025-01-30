@@ -6,7 +6,7 @@ import GithubLogo from '../../assets/logos/github-logo.png';
 function ContactPage () {
     return (
         <div className='d-flex flex-column all-center gap-50'>
-            <h2 className='relative mt-30 gradient-title-blue'> ME CONTACTER </h2>
+            <h2 className='relative mt-30 text-shadow-outline'> ME CONTACTER </h2>
 
             <section className={`${styles.contactPageContainer}  section d-flex flex-column justify-content-sb align-items-center wrap br-10`}>
               <div className= {`${styles.contactContainer}  d-flex flex-row all-center text-center gap-50 p-30 wrap`}>
@@ -23,14 +23,14 @@ function ContactPage () {
                             target='_blank'
                             rel='noopener noreferrer'
                             >
-                            <img  src={LinkedinLogo} alt='linkedin-link m-auto relative' className='btn-link' />
+                            <img  src={LinkedinLogo} alt='linkedin-link m-auto relative' className='image-btn-link' />
                         </a>
                         <a
                             href='https://github.com/BaptFr'
                             target='_blank'
                             rel='noopener noreferrer'
                             >
-                            <img  src={GithubLogo} alt='github-link m-auto relative' className='btn-link' />
+                            <img  src={GithubLogo} alt='github-link m-auto relative' className='image-btn-link' />
                         </a>
                     </div>
                 </div>

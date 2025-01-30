@@ -1,20 +1,21 @@
-import { useRef, useState, useEffect } from 'react';
+import { useRef } from 'react';
 import styles from './Presentationpage.module.scss';
 import StackSection from '../../components/StackSection';
-import ScrollToTopButton from '../../components/ScrollToTopButton';
 import SkillsSection from '../../components/SkillsSection';
 import EducationLogo from '../../assets/logos/education-logo.webp';
 import WorkLogo from '../../assets/logos/work-logo.webp';
+import ScrollToTopButton from '../../components/ScrollToTopButton';
 
 
 function PresentationPage () {
-    const stackSectionRef = useRef(null);
+    const topSectionRef = useRef(null);
     const scrollToSection = () => {
-        stackSectionRef.current.scrollIntoView({behavior: 'smooth'});
+        topSectionRef.current.scrollIntoView({behavior: 'smooth'});
     };
 
         return (
         <div className='d-flex flex-fill flex-column'>
+            <ScrollToTopButton targetRef={topSectionRef} />
             <section className={`${styles.introSection} section d-flex flex-column justify-content-sb align-items-center wrap`}>
             <h1 className='gradient-title-blue-center'>PRESENTATION</h1>
                 <article className='article  all-center'>
@@ -28,11 +29,9 @@ function PresentationPage () {
                     <div className="arrow arrowSliding delay2"></div>
                     <div className="arrow arrowSliding delay3"></div>
                 </div>
-                <ScrollToTopButton targetRef={stackSectionRef} />
-
             </section>
             {/* SECTION STACK  section (code more robust) */}
-            <section ref={stackSectionRef} className='section'>
+            <section ref={topSectionRef} className='section'>
                 <h2 className='gradient-title-purple'> STACK TECHNIQUE</h2>
                 <StackSection />
             </section>
