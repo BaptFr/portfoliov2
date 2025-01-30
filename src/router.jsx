@@ -2,10 +2,12 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import { lazy } from "react";
 
-const Homepage = lazy(() => import('./pages/homepage/Homepage'));
-const Projectspage= lazy(() => import('./pages/projectspage/Projectspage'));
+const LandingPage = lazy(() => import('./pages/landingpage/Landingpage.jsx'));
+const PresentationPage = lazy(() => import('./pages/presentationpage/Presentationpage'));
+const ProjectsPage= lazy(() => import('./pages/projectspage/Projectspage'));
 const ContactPage = lazy(() => import('./pages/contactpage/ContactPage'));
 const ErrorPage = lazy(() => import('./pages/errorpage/ErrorPage'));
+
 
 export const router = createBrowserRouter([
     {
@@ -14,11 +16,15 @@ export const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Homepage />
+                element: <LandingPage />
             },
             {
-                path:'projets',
-                element: <Projectspage />
+                path:'presentation',
+                element: <PresentationPage />
+            },
+            {
+                path:'projects',
+                element: <ProjectsPage />
             },
             {
                 path:'contact',

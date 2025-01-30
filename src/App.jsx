@@ -1,21 +1,26 @@
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Homepage from './pages/homepage/Homepage';
 import styles from './App.module.scss';
 import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
+import { useLocation } from 'react-router-dom';
 import Blur from './assets/images/blur1.png';
 
 
 function App() {
+  const location = useLocation(); 
+  const isLandingPage = location.pathname === '/'; //To Hide the Header
+
+
   return (
     <div >
       <div>
         <img src={Blur} className='background-image-blur absolute'/>
+        {!isLandingPage && (
         <div className='header-fixed'>
         <Header />
-        </div>
+        </div>)}
         <div>
         <Suspense>
           <Outlet />

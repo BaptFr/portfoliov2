@@ -1,32 +1,41 @@
-import styles from './Homepage.module.scss';
-import introImage from '../../assets/images/intro-image.webp';
+import { useRef, useState, useEffect } from 'react';
+import styles from './Presentationpage.module.scss';
 import StackSection from '../../components/StackSection';
+import ScrollToTopButton from '../../components/ScrollToTopButton';
 import SkillsSection from '../../components/SkillsSection';
 import EducationLogo from '../../assets/logos/education-logo.webp';
 import WorkLogo from '../../assets/logos/work-logo.webp';
 
 
-function Homepage () {
+function PresentationPage () {
+    const stackSectionRef = useRef(null);
+    const scrollToSection = () => {
+        stackSectionRef.current.scrollIntoView({behavior: 'smooth'});
+    };
 
-    return (
+        return (
         <div className='d-flex flex-fill flex-column'>
             <section className={`${styles.introSection} section d-flex flex-column justify-content-sb align-items-center wrap`}>
-            <h1 className='text-shadow-outline'> Bienvenue Sur Mon Portfolio ! </h1>
-                <article className='article d-flex flex-row all-center'>
-                    <p className='text-shadow-outline' >Retrouvez ici mon parcours et mes compétences. <br />Découvrez mes projets et contactez-moi via le menu.
+            <h1 className='gradient-title-blue-center'>PRESENTATION</h1>
+                <article className='article  all-center'>
+                    <p className='text-shadow-outline' > Retrouvez ici l&apos;ensemble des mes compétences et mon parcours professionnel.
                     </p>
-                    <img src={introImage} alt='intro-portrait' className='pageImage' />
+                    <p>Découvrez mes projets ou contactez-moi via le menu.
+                    </p>
                 </article>
-                
-            </section>
+                <div className='arrowsContainer' onClick={scrollToSection}>
+                    <div className="arrow arrowSliding delay1"></div>
+                    <div className="arrow arrowSliding delay2"></div>
+                    <div className="arrow arrowSliding delay3"></div>
+                </div>
+                <ScrollToTopButton targetRef={stackSectionRef} />
 
+            </section>
             {/* SECTION STACK  section (code more robust) */}
-            <section className='section br'>
+            <section ref={stackSectionRef} className='section'>
                 <h2 className='gradient-title-purple'> STACK TECHNIQUE</h2>
                 <StackSection />
             </section>
-
-
             {/* COMPETENCES section */}
             <section className='section'>
             <h2 className='gradient-title-blue-big'>METHODES <br /> & <br />COMPETENCES</h2>
@@ -144,4 +153,4 @@ function Homepage () {
         </div>
     )
 };
-export default Homepage;
+export default PresentationPage;
