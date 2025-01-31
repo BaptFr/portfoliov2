@@ -32,11 +32,14 @@ h1 {
     margin-top: 50px;
     font-size: 6em;
     font-weight: 600;
-    @include mixin.sm-lt{
-        font-size: 1.6em;
+    @include mixin.md{
+        font-size: 5em;
+    }
+    @include mixin.sm{
+        font-size: 3.8em;
     }
     @include mixin.xs{
-        font-size: 1.4em;
+        font-size: 2em;
     }
 }
 h2 {

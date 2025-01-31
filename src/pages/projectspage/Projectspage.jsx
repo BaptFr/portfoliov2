@@ -3,8 +3,6 @@ import styles from './Projectspage.module.scss';
 import ScrollToTopButton from '../../components/ScrollToTopButton';
 import Projects from '../../components/Projects';
 
-import GitHubLogo from '../../assets/logos/github-logo.webp';
-
 
 function Projectspage () {
      const topSectionRef = useRef(null);
@@ -34,15 +32,6 @@ function Projectspage () {
             <section ref={topSectionRef} className='mt-100 pt-75'>
                 <Projects />
             </section>
-            <div className='d-flex all-center p-10'>
-                <a
-                    href='https://github.com/BaptFr'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='.logo-link'>
-                    <img src={GitHubLogo} alt='Github-repository'></img>
-                </a>
-            </div>
         </div>
     )
 };

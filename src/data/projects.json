@@ -174,5 +174,29 @@
                 "type": "Voir le rapport d'optimisation"
             }
         ]
+    },
+    {
+        "id":"6",
+        "title": "Repository GitHub",
+        "image": "src/assets/images/repository-image.webp",
+        "tech": [
+            {
+                "url": "src/assets/logos/git-logo.webp",
+                "techname": "Git"
+            },
+            {
+                "url": "src/assets/logos/github-logo.webp",
+                "techname": "GitHub "
+            }
+        ],
+        "imagemodal": "./src/assets/images/intro-image.webp",
+        "purpose":"Retrouvez une partie du code de mes projets via mon profil GitHub",
+        "techdescription": "",
+        "links": [
+            {
+                "url": "https://github.com/BaptFr",
+                "type": "Voir mes repositories GitHub publiques "
+            }
+        ]
     }
 ]

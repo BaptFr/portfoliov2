@@ -44,18 +44,19 @@ function PresentationPage () {
             <section className='section'>
             <h2 className='gradient-title-orange'>SOFT SKILLS</h2>
             <div className={`${styles.softSkillsContainer} p-30`}>
-                    <ul className='d-flex flex-row justify-content-sa wrap gap-20'>
-                        <li>ESPRIT D&apos; EQUIPE</li>
-                        <li>AUTONOMIE</li>
-                        <li>ADAPTABILITE</li>
-                        <li>CURIOSITE</li>
-                        <li>PERSEVERANCE</li>
+                    <ul className='d-flex flex-column all-center wrap gap-25'>
+                        <div className={`${styles.softSkillsGroupContainers} d-flex flex-row gap-50 `}>
+                            <li>CURIOSITE</li>
+                            <li>AUTONOMIE</li>
+                        </div>
+                        <div className={`${styles.softSkillsGroupContainers} d-flex gap-50 `}>
+                            <li>ADAPTABILITE</li>
+                            <li>ESPRIT D&apos;EQUIPE</li>
+                            <li>PERSEVERANCE</li>
+                        </div>
                     </ul>
                 </div>
             </section>
-
-
-
             <h2 className='gradient-title-orange-big mb-5'>FORMATION <br /> & <br />EXPERIENCE PROFESSIONNELLE</h2>
             <section className={`${styles.formationSection} d-flex flex-column all-center gap-100`}>
                 <div className={`${styles.formationLogosLegend} d-flex flex-row `}>

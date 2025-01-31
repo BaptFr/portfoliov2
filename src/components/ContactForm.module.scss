@@ -39,9 +39,8 @@ form button {
         background:#ffffff;
         padding: 20px;
         border-radius: 10px;
-       
         @include mixin.sm-lt {
-         
+
             width: 50%;
         }
 

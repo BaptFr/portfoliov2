@@ -57,10 +57,10 @@ const Projects = () => {
       {/* overlay*/}
       {selectedCard !== null && (
         <div className={styles.modal} onClick={() => setSelectedCard(null)}>
-          <div className={`${styles.modalContent}  purple-model-modal`}>
+          <div className={`${styles.modalContent} purple-model-modal`}>
             {projectsData
               .filter((project) => project.id === selectedCard)
-              .map(({ title, links, imagemodal, purpose, techdescription }) => (
+              .map(({ title, links, purpose, techdescription }) => (
                 <div key={selectedCard}
                   style={{
                   }}
