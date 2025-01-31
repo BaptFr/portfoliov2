@@ -16,10 +16,9 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "emailjs-com": "^3.2.0",
     "particles.js": "^2.0.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.1",
-    "react-scroll": "^1.9.0",
     "react-tsparticles": "^2.12.2",
     "swiper": "^11.2.1",
     "tsparticles-slim": "^2.12.0"
