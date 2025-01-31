@@ -1,7 +1,6 @@
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-import styles from './App.module.scss';
 import { Outlet, useLocation } from 'react-router-dom';
 import { Suspense } from 'react';
 import Blur from './assets/images/blur1.webp';
