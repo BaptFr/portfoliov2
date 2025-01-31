@@ -12,7 +12,6 @@ function PresentationPage () {
     const scrollToSection = () => {
         topSectionRef.current.scrollIntoView({behavior: 'smooth'});
     };
-
         return (
         <div className='d-flex flex-fill flex-column'>
             <ScrollToTopButton targetRef={topSectionRef} />
@@ -25,9 +24,9 @@ function PresentationPage () {
                     </p>
                 </article>
                 <div className='arrowsContainer' onClick={scrollToSection}>
-                    <div className="arrow arrowSliding delay1"></div>
-                    <div className="arrow arrowSliding delay2"></div>
-                    <div className="arrow arrowSliding delay3"></div>
+                    <div className="arrow1 arrowSliding delay1"></div>
+                    <div className="arrow1 arrowSliding delay2"></div>
+                    <div className="arrow1 arrowSliding delay3"></div>
                 </div>
             </section>
             {/* SECTION STACK  section (code more robust) */}

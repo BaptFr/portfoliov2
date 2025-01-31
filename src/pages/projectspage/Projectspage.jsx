@@ -26,9 +26,9 @@ function Projectspage () {
                     </p>
                 </article>
                 <div className='arrowsContainer' onClick={scrollToSection}>
-                    <div className="arrow arrowSliding delay1"></div>
-                    <div className="arrow arrowSliding delay2"></div>
-                    <div className="arrow arrowSliding delay3"></div>
+                    <div className="arrow2 arrowSliding delay1"></div>
+                    <div className="arrow2 arrowSliding delay2"></div>
+                    <div className="arrow2 arrowSliding delay3"></div>
                 </div>
             </section>
             <section ref={topSectionRef} className='mt-100 pt-75'>
