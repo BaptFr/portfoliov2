@@ -6,7 +6,7 @@ const LandingPage = lazy(() => import('./pages/landingpage/Landingpage.jsx'));
 const PresentationPage = lazy(() => import('./pages/presentationpage/Presentationpage'));
 const ProjectsPage= lazy(() => import('./pages/projectspage/Projectspage'));
 const ContactPage = lazy(() => import('./pages/contactpage/ContactPage'));
-const ErrorPage = lazy(() => import('./pages/errorpage/ErrorPage'));
+const ErrorPage = lazy(() => import('./pages/errorpage/Errorpage'));
 
 
 export const router = createBrowserRouter([
