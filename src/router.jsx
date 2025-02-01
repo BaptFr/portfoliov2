@@ -1,11 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
+import { lazy } from "react";
 
-const LandingPage =  import('./pages/landingpage/Landingpage.jsx');
-const PresentationPage = import('./pages/presentationpage/Presentationpage');
-const ProjectsPage=  import('./pages/projectspage/Projectspage');
-const ContactPage =  import('./pages/contactpage/ContactPage');
-const ErrorPage =  import('./pages/errorpage/Errorpage');
+const LandingPage = lazy(() => import('./pages/landingpage/Landingpage.jsx'));
+const PresentationPage = lazy(() => import('./pages/presentationpage/Presentationpage'));
+const ProjectsPage= lazy(() => import('./pages/projectspage/Projectspage'));
+const ContactPage = lazy(() => import('./pages/contactpage/ContactPage'));
+const ErrorPage = lazy(() => import('./pages/errorpage/Errorpage'));
 
 
 export const router = createBrowserRouter([

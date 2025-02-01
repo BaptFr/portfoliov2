@@ -8,7 +8,7 @@ import Blur from './assets/images/blur1.webp';
 
 function App() {
   const location = useLocation();
-  const isLandingPage = location.pathname === '/'; //To Hide the Header
+  const isLandingPage = location.pathname === '/portfoliov2/'; //To Hide the Header
 
   return (
     <div >
