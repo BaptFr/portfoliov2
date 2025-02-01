@@ -3,5 +3,8 @@ import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig({
   plugins: [react()],
-   base: '/portfoliov2/'
+  build: {
+    outDir: 'dist'
+  },
+  base: '/portfoliov2/'
 })
