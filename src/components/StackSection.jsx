@@ -24,7 +24,7 @@ const TechSection = () => {
 
     useEffect(() => {
         // Datas recup.
-        fetch('portfoliov2/data/stack.json')
+        fetch('data/stack.json')
             .then((response) => {
                 if (!response.ok) {
                     throw new Error('Erreur lors du chargement des données / Error at datas loading');
