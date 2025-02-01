@@ -11,4 +11,11 @@ export default defineConfig({
       '@styles': '/src/assets/styles',
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use "@/assets/styles/index.scss" as *;`,
+      },
+    },
+  },
 })
