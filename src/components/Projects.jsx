@@ -7,7 +7,7 @@ const Projects = () => {
   const [selectedCard, setSelectedCard] = useState(null);
 
   useEffect(() => {
-    fetch('portfoliov2/data/projects.json')
+    fetch('data/projects.json')
         .then((response) => {
             if (!response.ok) {
                 throw new Error('Erreur lors de la récupération des données projects.');
