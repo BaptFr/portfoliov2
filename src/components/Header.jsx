@@ -1,5 +1,4 @@
 import styles from './Header.module.scss';
-import LogoSite from '../assets/images/logosite-header.webp';
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
@@ -14,7 +13,7 @@ function Header () {
     return (
         <header className={` ${styles.headerContainer} relative d-flex all-center p-15 `}>
             <div className='overlay'></div>
-            <img className={` ${styles.siteLogo} ${styles.blinkAnimation} z-index1`} src={ LogoSite } alt='logo'></img>
+            <img className={` ${styles.siteLogo} ${styles.blinkAnimation} z-index1`} src='assets/images/logosite-header.webp' alt='logo'></img>
             <nav className='z-index2'>
                 <ul className='d-flex all-center gap-15 mr-10'>
                     <NavLink to='presentation' end

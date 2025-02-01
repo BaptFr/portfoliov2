@@ -1,7 +1,6 @@
 import styles from './ContactPage.module.scss';
 import ContactForm from '../../components/ContactForm.jsx';
-import LinkedinLogo from '../../assets/logos/linkedin-logo.webp';
-import GithubLogo from '../../assets/logos/github-logo-blue.webp';
+
 
 function ContactPage () {
     return (
@@ -23,14 +22,14 @@ function ContactPage () {
                             target='_blank'
                             rel='noopener noreferrer'
                             >
-                            <img  src={LinkedinLogo} alt='linkedin-link m-auto relative' className='image-btn-link' />
+                            <img  src='assets/logos/linkedin-logo.webp' alt='linkedin-link m-auto relative' className='image-btn-link' />
                         </a>
                         <a
                             href='https://github.com/BaptFr'
                             target='_blank'
                             rel='noopener noreferrer'
                             >
-                            <img  src={GithubLogo} alt='github-link m-auto relative' className='image-btn-link' />
+                            <img  src='assets/logos/github-logo-blue.webp' alt='github-link m-auto relative' className='image-btn-link' />
                         </a>
                     </div>
                 </div>

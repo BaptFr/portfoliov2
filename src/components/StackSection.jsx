@@ -24,7 +24,7 @@ const TechSection = () => {
 
     useEffect(() => {
         // Datas recup.
-        fetch('./src/data/stack.json')
+        fetch('./data/stack.json')
             .then((response) => {
                 if (!response.ok) {
                     throw new Error('Erreur lors du chargement des données / Error at datas loading');
@@ -32,12 +32,12 @@ const TechSection = () => {
                 return response.json();
             })
             .then((data) => setTechsData(data))
-            .catch((err) => setError(err.message));
+            .catch((error) => setError(error.message));
     }, []);
 
     // Error message.
     if (error) {
-        return <p> Erreur : {error}</p>;
+        return <p> Errorr : {error}</p>;
     };
     if (!techsData) {
         return <p>Chargement des données...</p>;
@@ -53,7 +53,7 @@ const TechSection = () => {
                     <div className= {`${styles.techContainer} mt-30`}>
                         <div className='techBanner '>
                             <LogoBannerDyn
-                                jsonFile="./src/data/stack.json"
+                                jsonFile="./data/stack.json"
                                 sectionKey={key}
                             />
                         </div>

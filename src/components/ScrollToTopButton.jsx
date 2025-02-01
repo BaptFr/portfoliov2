@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import FuseeLogo from '../assets/logos/fusee-logo.webp';
 
 
 function ScrollToTopButton ({ targetRef })  {
@@ -26,7 +25,7 @@ function ScrollToTopButton ({ targetRef })  {
       <button  onClick={scrollToTarget}
       className= {` scrollToTopButton d-flex flex-row all-center ${visible ? 'show' : 'hide'}`}
       >
-        <img src={FuseeLogo} className='m-0 ' />
+        <img src='assets/logos/fusee-logo.webp' className='m-0 ' />
         Remonter
       </button>
     </div>

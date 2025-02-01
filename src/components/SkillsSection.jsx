@@ -7,7 +7,7 @@ function SkillsSection () {
     const [error, setError] = useState(null);
 
     useEffect (()=> {
-        fetch('./src/data/skills.json')
+        fetch('./data/skills.json')
         .then (response => {
             if(!response.ok) {
                 console.error('Error fetching data:', response.statusText);

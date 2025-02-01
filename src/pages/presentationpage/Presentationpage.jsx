@@ -2,8 +2,6 @@ import { useRef } from 'react';
 import styles from './Presentationpage.module.scss';
 import StackSection from '../../components/StackSection';
 import SkillsSection from '../../components/SkillsSection';
-import EducationLogo from '../../assets/logos/education-logo.webp';
-import WorkLogo from '../../assets/logos/work-logo.webp';
 import ScrollToTopButton from '../../components/ScrollToTopButton';
 
 
@@ -60,8 +58,8 @@ function PresentationPage () {
             <h2 className='gradient-title-orange-big mb-5'>FORMATION <br /> & <br />EXPERIENCE PROFESSIONNELLE</h2>
             <section className={`${styles.formationSection} d-flex flex-column all-center gap-100`}>
                 <div className={`${styles.formationLogosLegend} d-flex flex-row `}>
-                    <img className='orange-model' src={EducationLogo} alt='education-logo'/>
-                    <img className='purple-model' src={WorkLogo} alt='work-logo'/>
+                    <img className='orange-model' src='assets/logos/education-logo.webp' alt='education-logo'/>
+                    <img className='purple-model' src='assets/logos/work-logo.webp' alt='work-logo'/>
                 </div>
                 <div className={`${styles.timeline}`}>
                     <div className={styles.timelineEmptyRight}>

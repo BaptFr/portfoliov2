@@ -3,7 +3,6 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import { Outlet, useLocation } from 'react-router-dom';
 import { Suspense } from 'react';
-import Blur from './assets/images/blur1.webp';
 
 
 function App() {
@@ -13,7 +12,7 @@ function App() {
   return (
     <div >
       <div>
-        <img src={Blur} className='background-image-blur absolute'/>
+        <img src='assets/images/blur1.webp' className='background-image-blur absolute'/>
         {!isLandingPage && (
         <div className='header-fixed'>
         <Header />
