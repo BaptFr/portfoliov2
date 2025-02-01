@@ -6,4 +6,9 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
+  resolve: {
+    alias: {
+      '@styles': '/src/assets/styles',
+    },
+  },
 })
