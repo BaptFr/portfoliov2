@@ -1,5 +1,5 @@
 import styles from './ContactPage.module.scss';
-import ContactForm from '../../components/ContactForm.jsx';
+import ContactForm from '../../components/ContactForm';
 
 
 function ContactPage () {
