@@ -1,0 +1,58 @@
+@use '../assets/styles/mixins' as mixin;
+
+.stackSectionContainer {
+    color: #ffffff;
+}
+
+.stackCard{
+    @include mixin.lg {
+        width:33%;
+    }
+    @include mixin.md {
+        width:75%;
+    }
+    @include mixin.sm-lt {
+        width: 60%;
+    }
+    &:hover{
+        .stackTitle {
+            border-bottom: 2px solid var(--purple1);
+        }
+    }
+    .stackTitle {
+        height: 120px;
+        width: 90%;
+        border-radius: 20px 20px 0px 0px;
+        border-bottom: 1px solid var(--purple1);
+        text-shadow: var(--text-shadow);
+        @include mixin.lg-lt{
+            padding: 5px;
+        }
+
+        h3{
+            font-size: 1.3em;
+            line-height: 1.1em;
+            @include mixin.lg-lt{
+                width: 90%;
+            }
+            @include mixin.md{
+                font-size: 1.8em;
+            }
+            @include mixin.sm-lt{
+                font-size: 1em;
+            }
+        }
+    }
+    .techContainer {
+        width: 300px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 75px;
+        @include mixin.md-lt{
+            width:90%;
+        }
+    }
+
+}

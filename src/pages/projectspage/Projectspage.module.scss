@@ -1,0 +1,40 @@
+@use '../../assets/styles/mixins' as mixin;
+
+.projectsIntroContainer {
+    padding: 0px 100px;
+    h1 {
+        margin:  0px 0px 0px 30px;
+    }
+    p{
+        font-size: 1.3em;
+    }
+    @include mixin.md-lt{
+    padding: 0px 50px;
+        h2 {
+            margin: 0;
+        }
+        p{
+            font-size: 1.1em;
+        }
+    }
+    @include mixin.sm-lt {
+        padding: 0px 20px;
+        p{
+            font-size: 1em;
+        }
+    }
+    @include mixin.xs{
+        p{
+            font-size: 0.9em;
+        }
+    }
+}
+.otherLinksSection{
+    a {
+        img{
+        width: 25px;
+        height: 25px;
+        }
+    }
+
+}
