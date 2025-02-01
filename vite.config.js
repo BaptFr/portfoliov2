@@ -3,19 +3,5 @@ import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig({
   plugins: [react()],
-  build: {
-    outDir: 'dist',
-  },
-  resolve: {
-    alias: {
-      '@styles': '/src/assets/styles',
-    },
-  },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@use "@/assets/styles/index.scss" as *;`,
-      },
-    },
-  },
+   base: '/portfoliov2/'
 })
