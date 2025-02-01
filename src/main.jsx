@@ -6,7 +6,7 @@ import { router } from './router.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/portfoloiov2/"></BrowserRouter>
+    <BrowserRouter basename="/portfoliov2/"></BrowserRouter>
     <RouterProvider router={ router } >
     </RouterProvider>
   </StrictMode>,
