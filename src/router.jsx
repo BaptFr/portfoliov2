@@ -11,7 +11,7 @@ const ErrorPage = lazy(() => import('./pages/errorpage/Errorpage'));
 
 export const router = createBrowserRouter([
     {
-        path:'/porfoliov2/',
+        path:'/',
         element: <App />,
         children: [
             {
