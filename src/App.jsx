@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import { Outlet, useLocation } from 'react-router-dom';
 import { Suspense } from 'react';
-import Blur from './assets/images/blur1.webp';
+import Blur from '/assets/images/blur1.webp';
 
 
 function App() {
