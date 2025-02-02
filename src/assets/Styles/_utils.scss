@@ -120,6 +120,9 @@
 .mr-20 {
     margin-right: 20px;
 }
+.mt-5 {
+    margin-top: 5px;
+}
 .mt-10 {
     margin-top: 10px;
 }
@@ -139,7 +142,9 @@
     margin-top: 100px;
 }
 
-
+.mb-5 {
+    margin-bottom: 5px;
+}
 .mb-10 {
     margin-bottom: 10px;
 }
@@ -212,8 +217,15 @@
     text-align: right;
 }
 
-//Effects 
 
+//For Media Queries
 
+// Secion Refpour smaller devices
+
+.top-section-ref {
+    @include mixin.md-lt {
+      margin-bottom: 120px;
+    }
+}
 
 

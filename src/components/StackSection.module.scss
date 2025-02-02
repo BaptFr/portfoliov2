@@ -5,14 +5,16 @@
 }
 
 .stackCard{
-    @include mixin.lg {
-        width:33%;
+    @include mixin.xl {
+        width: 40%;
+
     }
-    @include mixin.md {
-        width:75%;
+
+    @include mixin.lg-lt {
+        width: 45%;
     }
-    @include mixin.sm-lt {
-        width: 60%;
+    @include mixin.xs {
+        width: 90%;
     }
     &:hover{
         .stackTitle {
@@ -28,18 +30,23 @@
         @include mixin.lg-lt{
             padding: 5px;
         }
+        @include mixin.xs{
+            width: 95%;
+        }
 
         h3{
-            font-size: 1.3em;
+            font-size: 1.8em;
             line-height: 1.1em;
             @include mixin.lg-lt{
                 width: 90%;
+                font-size: 1.7em;
+
             }
             @include mixin.md{
-                font-size: 1.8em;
+                font-size: 1.3em;
             }
             @include mixin.sm-lt{
-                font-size: 1em;
+                font-size: 1.2em;
             }
         }
     }

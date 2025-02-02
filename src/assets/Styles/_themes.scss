@@ -7,6 +7,7 @@
   color: #ffffff;
 }
 
+
 .article {
   width: 90%;
   padding: 35px;
@@ -25,8 +26,8 @@
 }
 
 //ANIMATED ARROWS for Intro Sections
-.arrowsContainer {
-  margin: 75px 0px;
+.arrows-container {
+  margin: 0px 0px;
   &:hover{
     cursor: pointer;
   }
@@ -153,9 +154,9 @@
   @include mixin.sm-lt {
     max-width: none;
     width: 60px;
-    left: 45%;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(135deg, #5500ffc5, #8e2de2); 
   }
 }
 
@@ -218,33 +219,44 @@
 }
 
 
-// CARDS
-.cardContainer {
-  width: 25%;
-  height: 700px;
+// CARDS STYLE REUSABLE
+.card-container {
+  width: 45%;
+  height: 600px;
   min-width: 250px;
   padding: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
   transition: all 0.2s ease;
   &:hover{
     transform: scale(1.005);
     box-shadow: 0px 2px 18px 5px rgb(59, 131, 246);
   }
   @include mixin.lg{
-    width: 30%;
-  }
-  @include mixin.sm{
-    width: 45%;
     height: 620px;
   }
-  @include mixin.xs{
+  @include mixin.md-lt{
     width: 80%;
     height: auto;
   }
+  @include mixin.xs{
+ 
+  }
+  .card-title-container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    @include mixin.md-lt{
+      width: 85%;
+    }
+  }
   h3 {
-    height: 20%;
+    height: 15%;
     font-size: 1.4em;
     font-weight: 4500;
     text-shadow: var(--text-shadow);
@@ -257,25 +269,25 @@
     }
   }
   img {
+    margin-bottom: 10px;
     width: 150px;
     height: auto;
   }
-  p{
-    width: 85%;
-    height: auto;
+  .card-text-container {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    text-shadow: none;
-    font-size: 1em;
-    @include mixin.lg{
-      width: 90%;
-      font-size: 0.95em;
-    }
-    @include mixin.md-lt {
-      font-size: 0.8em;
-    }
-    @include mixin.xs{
-      width: 90%;
+    p {
+      text-shadow: none;
       font-size: 1em;
+      @include mixin.lg{
+        font-size: 0.9em;
+      }
+      @include mixin.xs{
+        font-size: 1em;
+      }
     }
   }
 }

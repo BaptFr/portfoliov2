@@ -29,7 +29,10 @@ function Projectspage () {
                     <div className="arrow2 arrowSliding delay3"></div>
                 </div>
             </section>
-            <section ref={topSectionRef} className='mt-100 pt-75'>
+             {/* Scroll ref for media queries */}
+            <div ref={topSectionRef}>
+            </div>
+            <section className='mt-100 pt-75'>
                 <Projects />
             </section>
         </div>

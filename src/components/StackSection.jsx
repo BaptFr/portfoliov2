@@ -34,7 +34,6 @@ const TechSection = () => {
             .then((data) => setTechsData(data))
             .catch((error) => setError(error.message));
     }, []);
-
     // Error message.
     if (error) {
         return <p> Errorr : {error}</p>;
