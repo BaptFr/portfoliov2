@@ -6,10 +6,8 @@
 
 .stackCard{
     @include mixin.xl {
-        width: 40%;
-
+        width: 30%;
     }
-
     @include mixin.lg-lt {
         width: 45%;
     }
@@ -23,7 +21,7 @@
     }
     .stackTitle {
         height: 120px;
-        width: 90%;
+        width: 95%;
         border-radius: 20px 20px 0px 0px;
         border-bottom: 1px solid var(--purple1);
         text-shadow: var(--text-shadow);
@@ -35,7 +33,7 @@
         }
 
         h3{
-            font-size: 1.8em;
+            font-size: 1.4em;
             line-height: 1.1em;
             @include mixin.lg-lt{
                 width: 90%;
