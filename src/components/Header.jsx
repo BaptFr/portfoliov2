@@ -1,5 +1,5 @@
 import styles from './Header.module.scss';
-import LogoSite from '../assets/images/logosite-header.webp';
+import LogoSite from '/assets/images/logosite-header.webp';
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 

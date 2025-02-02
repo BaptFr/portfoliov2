@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import FuseeLogo from '../assets/logos/fusee-logo.webp';
+import FuseeLogo from '/assets/logos/fusee-logo.webp';
 
 
 function ScrollToTopButton ({ targetRef })  {

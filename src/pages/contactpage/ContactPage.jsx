@@ -1,7 +1,7 @@
 import styles from './ContactPage.module.scss';
 import ContactForm from '../../components/ContactForm.jsx';
-import LinkedinLogo from 'assets/logos/linkedin-logo.webp';
-import GithubLogo from 'assets/logos/github-logo-blue.webp';
+import LinkedinLogo from '/assets/logos/linkedin-logo.webp';
+import GithubLogo from '/assets/logos/github-logo-blue.webp';
 
 function ContactPage () {
     return (
