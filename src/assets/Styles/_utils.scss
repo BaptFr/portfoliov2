@@ -223,6 +223,7 @@
 // Secion Refpour smaller devices
 
 .top-section-ref {
+    margin-top: 100px;
     @include mixin.md-lt {
       margin-bottom: 120px;
     }
