@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-
 function ScrollToTopButton ({ targetRef })  {
 
   const [visible, setVisible] = useState(false);
@@ -29,7 +28,6 @@ function ScrollToTopButton ({ targetRef })  {
         Remonter
       </button>
     </div>
-
   );
 };
 

@@ -39,7 +39,7 @@ h1 {
         font-size: 3.8em;
     }
     @include mixin.xs{
-        font-size: 2em;
+        font-size: 2.8em;
     }
 }
 h2 {
@@ -107,8 +107,8 @@ img {
 
 .header-fixed{
     position: sticky;
+    margin: auto;
     top: 0;
-    left: 25vh;
     width: 75%;
     z-index: 10;
 }

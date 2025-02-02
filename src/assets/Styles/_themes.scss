@@ -361,10 +361,22 @@
 //IMAGE & BLUR
 
 .background-image-blur{
-  width:70%;
-  height: auto;
-  top: -250px;
-  left: 25vh;
+  width: 100%;
+  margin: auto;
+  top: -480px;
+
+  @include mixin.lg{
+    top: -380px;
+  }
+  @include mixin.md{
+    top: -280px;
+  }
+  @include mixin.sm{
+    top: -150px
+  }
+  @include mixin.xs{
+    top: -100px;
+  }
 }
 
 .icons{

@@ -1,14 +1,19 @@
+import { useRef } from 'react';
 import styles from './ContactPage.module.scss';
 import ContactForm from '../../components/ContactForm';
+import ScrollToTopButton from '../../components/ScrollToTopButton';
 
 
 function ContactPage () {
+    const topSectionRef = useRef(null);
+
     return (
         <div className='d-flex flex-column all-center gap-50'>
-            <h2 className='relative mt-30 text-shadow-outline'> ME CONTACTER </h2>
+            <h1 className='relative m-50 text-shadow-outline'> ME CONTACTER </h1>
 
-            <section className={`${styles.contactPageContainer}  section d-flex flex-column justify-content-sb align-items-center wrap br-10`}>
+            <section ref={topSectionRef} className={`${styles.contactPageContainer}  section d-flex flex-column justify-content-sb align-items-center wrap br-10`}>
               <div className= {`${styles.contactContainer}  d-flex flex-row all-center text-center gap-50 p-30 wrap`}>
+                <ScrollToTopButton targetRef={topSectionRef} />
                 <div className={`${styles.articleContainer} d-flex flex-column p-40 gap-100  `}>
                     <article className='text-align-center'>
                         <p>Vous souhaitez échanger à propos d&apos;un projet ou une autre demande ? < br/>

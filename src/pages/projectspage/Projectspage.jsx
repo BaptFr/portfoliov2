@@ -19,8 +19,8 @@ function Projectspage () {
                     <p>Vous trouverez ici une sélection de mes réalisations ou projets en cours.<br />
                     Découvrez différents projets de développement Front-End, Back-End, Full-Stack mais aussi de Debug & Optimisation SEO.<br />
                     <br />
-                    Ce portfolio lui-même est développé avec React pour une interface utilisateur dynamique et un code modulaire.<br />
-                    Stylisé en SCSS pour une gestion des styles efficace et un design responsive pour adapter l&apos;interface et l&apos; expérience utilisateur à tout les supports.
+                    Ce portfolio est lui-même développé avec React pour une interface utilisateur dynamique et un code modulaire.<br />
+                    Stylisé en SCSS pour une gestion des styles efficace et un design responsive.
                     </p>
                 </article>
                 <div className='arrowsContainer' onClick={scrollToSection}>

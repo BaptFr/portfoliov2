@@ -11,20 +11,19 @@ function LandingPage () {
             <div className={styles.astronaut2}>
                 <img src="https://images.vexels.com/media/users/3/152641/isolated/preview/2b3d63661f0d7fe62c36168604985f26-space-cosmonaut-cartoon-by-vexels.png" alt="" width="280" />
             </div>
-            <div className='  z-index1 relative d-flex flex-column all-center mt-50  gap-50 z-index4'>
+            <div className={`${styles.titlesContainer}  z-index1 relative d-flex flex-column all-center mt-50  gap-50 z-index4 `}>
                 <div className=''>
                     <h1 className={`${styles.landingTitle} gradient-title-purple-center mt-40`}>Bienvenue sur mon</h1>
-                    <h1 className={`${styles.landingTitle}  relative z-index1 gradient-title-purple-center mt-40 mb-10`}> Portfolio</h1>
+                    <h1 className={`${styles.landingTitle}  relative z-index1 gradient-title-purple-center  mb-10`}> Portfolio</h1>
                 </div>
                 <div className= ' d-flex flex-column all-center'>
                 <h2 className={`${styles.landingSubtitle} text-shadow-outline `}>Retrouvez ici mon parcours, compétences et mes différents projets</h2>
-                    <NavLink to='presentation' end className={`${styles.buttonLink} `}>
-                            C&apos; EST PARTI !
+                    <NavLink to='presentation' end className={`${styles.buttonLink} d-flex`}>
+                           PAR ICI <i className='fa-solid fa-circle-chevron-right ml-15' />
                     </NavLink>
                 </div>
             </div>
         </div>
-    
     )
 }
 
